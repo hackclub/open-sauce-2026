@@ -1,6 +1,6 @@
 ## Overview / qualifying
 
-To qualify for Open Saucem you'll need to collect at least 3 points
+To qualify for Open Sauce you'll need to collect at least 3 points
 
 When you submit your project, you can submit your project for one of 3 different tiers:
 
