@@ -24,7 +24,7 @@ Get up to $300 for the initial design, and then $50 to make changes after buildi
 
 _feel like this funding isn't enough? dm @alexren!_
 
-**To qualify for Open Sauce, you'll need to collect at least 12 points! This also comes with a $75 USD travel stipend.** Every 4 points qualifies you for another $75 USD domestic / 150 USD int'l
+**To qualify for Open Sauce, you'll need to collect at least 12 points! This also comes with a $75 USD travel stipend.** Every extra 4 points (on top of the original 12) qualifies you for another $75 USD domestic / 150 USD int'l
 
 Needs based stipends available!
 
