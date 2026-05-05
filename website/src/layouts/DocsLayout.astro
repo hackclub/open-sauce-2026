@@ -1,0 +1,25 @@
+---
+import { ClientRouter } from "astro:transitions";
+import Layout from "./Layout.astro";
+import DocsSidebar from "../components/DocsSidebar.astro";
+import DocsPagination from "../components/DocsPagination.astro";
+---
+
+<Layout>
+    <ClientRouter slot="head" />
+    <div class="flex min-h-screen font-sans">
+        <DocsSidebar />
+        <main class="flex-1 px-12 py-16">
+            <article
+                class="prose prose-stone max-w-3xl mx-auto prose-p:font-medium prose-li:font-medium"
+            >
+                <slot />
+                <br />
+                <br />
+            </article>
+            <div class="max-w-3xl mx-auto">
+                <DocsPagination />
+            </div>
+        </main>
+    </div>
+</Layout>

@@ -1,0 +1,32 @@
+---
+import { DOCS } from "../data/docs";
+
+const currentSlug = Astro.url.pathname
+    .replace(/^\/docs\//, "")
+    .replace(/\/$/, "");
+---
+
+<aside class="w-56 shrink-0 border-r border-stone-400/40 p-6">
+    <a
+        href="/"
+        class="block mb-8 text-sm text-stone-600 hover:text-stone-900 font-semibold"
+        >← Back</a
+    >
+    <nav class="flex flex-col gap-1">
+        {
+            DOCS.map((d) => (
+                <a
+                    href={`/docs/${d.slug}`}
+                    class:list={[
+                        "block px-3 py-1.5 rounded text-sm",
+                        d.slug === currentSlug
+                            ? "bg-stone-800/10 font-bold text-stone-900"
+                            : "text-stone-700 hover:bg-stone-800/5 font-semibold",
+                    ]}
+                >
+                    {d.title}
+                </a>
+            ))
+        }
+    </nav>
+</aside>

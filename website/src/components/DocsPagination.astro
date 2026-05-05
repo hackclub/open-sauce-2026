@@ -1,0 +1,40 @@
+---
+import { DOCS } from "../data/docs";
+
+const currentSlug = Astro.url.pathname
+    .replace(/^\/docs\//, "")
+    .replace(/\/$/, "");
+
+const idx = DOCS.findIndex((d) => d.slug === currentSlug);
+const prev = idx > 0 ? DOCS[idx - 1] : null;
+const next = idx >= 0 && idx < DOCS.length - 1 ? DOCS[idx + 1] : null;
+---
+
+<nav class="grid grid-cols-2 gap-4 mt-16 pt-8 border-t border-stone-300">
+    <div>
+        {
+            prev && (
+                <a
+                    href={`/docs/${prev.slug}`}
+                    class="block p-4 border border-stone-300 rounded-lg hover:border-stone-500 hover:bg-stone-100/50 transition"
+                >
+                    <div class="text-xs text-stone-500 mb-1">← Previous</div>
+                    <div class="font-semibold text-stone-900">{prev.title}</div>
+                </a>
+            )
+        }
+    </div>
+    <div class="text-right">
+        {
+            next && (
+                <a
+                    href={`/docs/${next.slug}`}
+                    class="block p-4 border border-stone-300 rounded-lg hover:border-stone-500 hover:bg-stone-100/50 transition"
+                >
+                    <div class="text-xs text-stone-500 mb-1">Next →</div>
+                    <div class="font-semibold text-stone-900">{next.title}</div>
+                </a>
+            )
+        }
+    </div>
+</nav>

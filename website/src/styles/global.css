@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+    --font-serif: "EB Garamond", serif;
+    --font-sans: "Cause", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+    background-image: url("/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+    animation: none;
+}
