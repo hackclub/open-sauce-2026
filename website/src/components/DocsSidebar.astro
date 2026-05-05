@@ -2,7 +2,7 @@
 import { DOCS } from "../data/docs";
 
 const currentSlug = Astro.url.pathname
-    .replace(/^\/docs\//, "")
+    .replace(/^\/info\//, "")
     .replace(/\/$/, "");
 
 const currentDoc = DOCS.find((d) => d.slug === currentSlug);
@@ -52,7 +52,7 @@ const currentDoc = DOCS.find((d) => d.slug === currentSlug);
         {
             DOCS.map((d) => (
                 <a
-                    href={`/docs/${d.slug}`}
+                    href={`/info/${d.slug}`}
                     class:list={[
                         "block px-3 py-1.5 rounded text-sm",
                         d.slug === currentSlug
@@ -79,7 +79,7 @@ const currentDoc = DOCS.find((d) => d.slug === currentSlug);
         {
             DOCS.map((d) => (
                 <a
-                    href={`/docs/${d.slug}`}
+                    href={`/info/${d.slug}`}
                     class:list={[
                         "block px-3 py-1.5 rounded text-sm",
                         d.slug === currentSlug

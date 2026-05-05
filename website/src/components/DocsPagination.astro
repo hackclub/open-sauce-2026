@@ -2,7 +2,7 @@
 import { DOCS } from "../data/docs";
 
 const currentSlug = Astro.url.pathname
-    .replace(/^\/docs\//, "")
+    .replace(/^\/info\//, "")
     .replace(/\/$/, "");
 
 const idx = DOCS.findIndex((d) => d.slug === currentSlug);
@@ -15,7 +15,7 @@ const next = idx >= 0 && idx < DOCS.length - 1 ? DOCS[idx + 1] : null;
         {
             prev && (
                 <a
-                    href={`/docs/${prev.slug}`}
+                    href={`/info/${prev.slug}`}
                     class="block p-4 border border-stone-300 rounded-lg hover:border-stone-500 hover:bg-stone-100/50 transition"
                 >
                     <div class="text-xs text-stone-500 mb-1">← Previous</div>
@@ -28,7 +28,7 @@ const next = idx >= 0 && idx < DOCS.length - 1 ? DOCS[idx + 1] : null;
         {
             next && (
                 <a
-                    href={`/docs/${next.slug}`}
+                    href={`/info/${next.slug}`}
                     class="block p-4 border border-stone-300 rounded-lg hover:border-stone-500 hover:bg-stone-100/50 transition"
                 >
                     <div class="text-xs text-stone-500 mb-1">Next →</div>
