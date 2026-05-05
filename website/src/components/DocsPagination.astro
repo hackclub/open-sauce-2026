@@ -10,7 +10,7 @@ const prev = idx > 0 ? DOCS[idx - 1] : null;
 const next = idx >= 0 && idx < DOCS.length - 1 ? DOCS[idx + 1] : null;
 ---
 
-<nav class="grid grid-cols-2 gap-4 mt-16 pt-8 border-t border-stone-300">
+<nav class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-16 pt-8 border-t border-stone-300">
     <div>
         {
             prev && (
