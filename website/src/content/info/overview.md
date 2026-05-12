@@ -1,6 +1,6 @@
 # Overview
 
-Welcome aboard. This event will be split into 3 parts!
+Welcome aboard. This event is split into 3 parts:
 
 ## 1. Design & build projects (May 1st-July 31st)
 
@@ -14,13 +14,31 @@ When you submit your project, you can submit your project for one of 3 different
 
 Get up to $25 for the initial design, and then $10 to make changes after building your project!
 
+Some examples:
+
+- A generic macropad!
+- Simple PCBs!
+
 #### Tier 2, gadgets n' gizmos! ($150 total) 12 pts
 
 Get up to $120 for the initial design, and then $30 to make changes after building your project!
 
+Some examples:
+
+- [@egg_splats biblically accurate keyboard!](https://www.reddit.com/r/MechanicalKeyboards/comments/1mf0fmm/the_biblically_accurate_keyboard/)
+- [The Hack Club Orpheus Pico 2](https://github.com/hackclub/orpheus-pico)
+- [@ConfusedHello's USB Mic](https://github.com/ConfusedHello/USB-Mic/)
+- Battlebots!
+- Drones!
+
 #### Tier 1, machines and arcane science ($350 total) 20 pts
 
 Get up to $300 for the initial design, and then $50 to make changes after building your project!
+
+Some examples:
+
+- [@Allen D's Ender-X4](https://github.com/ading2210/ender-x4)
+- [@Kai Peireira's Cheetah MX4](https://github.com/KaiPereira/Cheetah-MX4-Mini/tree/master)
 
 _feel like this funding isn't enough? dm @alexren!_
 

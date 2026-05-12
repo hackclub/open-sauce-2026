@@ -17,3 +17,7 @@ tl;dr:
 - [#open-sauce-2026-experts](https://hackclub.enterprise.slack.com/archives/C0B0CADUV3P) - get design help, or get your project reviewed!
 - [#open-sauce-2026-idea-pool](https://hackclub.enterprise.slack.com/archives/C0B1MBF96GZ) - share ideas!
 - [#open-sauce-2026-projects](https://hackclub.enterprise.slack.com/archives/C0B09B5UBV1) - post your project ships!
+
+### I bought Open Sauce tickets from Flavortown/Stasis/Etc! Is it valid for this event?
+
+Nope! Those are general admission tickets. You will be able to attend the main expo but you will not be able to participate in the Sauceathon or demo your project at the booths
