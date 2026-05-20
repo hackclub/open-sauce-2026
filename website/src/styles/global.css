@@ -18,6 +18,10 @@ body {
     @apply border-stone-900/67 border-2;
 }
 
+.prose img {
+    @apply rounded-lg;
+}
+
 summary::-webkit-details-marker {
     display: none;
 }

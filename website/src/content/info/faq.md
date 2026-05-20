@@ -2,12 +2,9 @@
 
 Frequently asked questions! If you have a question not answered here, ask in [#open-sauce-2026](https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ)
 
-## Key dates:
+### Do I need to actually build my projects to collect points?
 
-- In-person hackathon in the Bay Area from July 15-17th
-- Open Sauce itself is from July 18-19th
-- Lodging & transport will be covered from the night of July 15th to the Morning of July 20th. Lunch and dinner during Open Sauce will not be covered. Additionally, there is no dinner on the 17th.
-- Base of $75 USD flight stipend, eligible for more the more projects you build through August 31st. Design submissions due July 31st (tentatively, subject to change to be moved later)
+Yes! **If you do not build your project, it does not count**
 
 ### There's a lot of channels! Which one do I use?
 
@@ -21,3 +18,7 @@ tl;dr:
 ### I bought Open Sauce tickets from Flavortown/Stasis/Etc! Is it valid for this event?
 
 Nope! Those are general admission tickets. You will be able to attend the main expo but you will not be able to participate in the Sauceathon or demo your project at the booths
+
+### Can I transfer my projects from stasis/fallout/etc?
+
+Yes, if you can no longer attend those events!

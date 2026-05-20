@@ -1,6 +1,8 @@
 # Overview
 
-Welcome aboard. This event is split into 3 parts:
+Welcome aboard. This event is split into 3 parts, here's how it works:
+
+_Make sure to check out the [FAQ](/info/faq) if you have any questions!_
 
 ## 1. Design & build projects (May 1st-July 31st)
 
