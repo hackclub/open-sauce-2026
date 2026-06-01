@@ -1,0 +1,48 @@
+---
+interface Props {
+    src: string;
+    class: string;
+    description?: string;
+}
+
+const { src, class: className, description } = Astro.props;
+const id = Math.random().toString(36).slice(2);
+---
+
+<div class={`absolute group ${className}`} id={`wrapper-${id}`}>
+    {description && (
+        <div class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity pointer-events-none" id={`tooltip-${id}`}>
+            <span class="text-center px-4 py-2 bg-black/60 rounded-lg text-white text-md">
+                {description}
+            </span>
+        </div>
+    )}
+    <img src={src} class="w-full" id={`img-${id}`} crossorigin="anonymous"/>
+</div>
+
+<script define:vars={{ id }}>
+    const img = document.getElementById(`img-${id}`);
+    const tooltip = document.getElementById(`tooltip-${id}`);
+    if (!tooltip) return;
+
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d');
+
+    img.addEventListener('load', () => {
+        canvas.width = img.naturalWidth;
+        canvas.height = img.naturalHeight;
+        ctx.drawImage(img, 0, 0);
+    });
+
+    img.addEventListener('mousemove', (e) => {
+        const rect = img.getBoundingClientRect();
+        const x = Math.floor((e.clientX - rect.left) * (img.naturalWidth / rect.width));
+        const y = Math.floor((e.clientY - rect.top) * (img.naturalHeight / rect.height));
+        const alpha = ctx.getImageData(x, y, 1, 1).data[3];
+        tooltip.style.opacity = alpha > 10 ? '1' : '0';
+    });
+
+    img.addEventListener('mouseleave', () => {
+        tooltip.style.opacity = '0';
+    });
+</script>

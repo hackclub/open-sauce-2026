@@ -3,7 +3,7 @@
 
 @theme {
     --font-serif: "EB Garamond", serif;
-    --font-sans: "Cause", ui-sans-serif, system-ui, sans-serif;
+    --font-sans: "Hind Madurai", ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    font-family: "Hind Madurai", sans-serif;
 }
 
 .prose hr {
@@ -29,4 +30,58 @@ summary::-webkit-details-marker {
 ::view-transition-old(root),
 ::view-transition-new(root) {
     animation: none;
+}
+
+.hero {
+    background-image: url("/herobg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    font-family: "Germania One", system-ui;
+    color: #3B312F;
+}
+
+.germania {
+  font-family: "Germania One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.link:hover {
+    text-decoration: underline wavy;
+}
+
+.hind-madurai-light {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hind-madurai-regular {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hind-madurai-medium {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hind-madurai-semibold {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hind-madurai-bold {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
