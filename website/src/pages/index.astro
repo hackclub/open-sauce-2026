@@ -138,9 +138,13 @@ import HeroProject from "../components/HeroProject.astro";
 
     <div class="py-24 bg-[#FCF3DE] text-[#3B312F]">
         <div class="flex flex-col items-center">
-            <p class="text-4xl mb-8 germania">
-                This event is split into three parts:
-            </p>
+            <div class="mb-8 text-center">
+                <p class="text-4xl germania">
+                    The greatest hardware adventure yet.
+                </p>
+                <p class="text-xl mt-2">This event is split into three parts:</p>
+            </div>
+
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div
@@ -150,26 +154,26 @@ import HeroProject from "../components/HeroProject.astro";
                         Part 1: make hardware projects!
                     </p>
                     <p class="text-xl">
-                        Make hardware projects in <a
+                        Design the PCB and CAD to your hardware projects in <a
                             href="https://stardance.hackclub.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             class="text-[#3B312F] hover:underline font-bold link"
                             >Stardance</a
-                        >! Submit your design to get funded, and then build it in-person
-                        after!
-                    </p>
-                    <p class="text-xl mt-4">
-                        Submit to 1 of 3 tiers, and get either $35, $150, or
-                        $350 to get parts! Build a tier 2 or higher to qualify
-                        for Outpost.
+                        >, Hack Club's summer program! 
+                        
+                        <p class="text-xl mt-4">Submit your design to [OUTPOST] to get a grant up to 350 USD 
+                        to purchase the parts for your project.</p>
+                        
+                        <p class="text-xl mt-4">Then, build your project irl! After you ship the build, you'll earn points to qualify for the Outpost Hackathon.</p>
                     </p>
                 </div>
 
-                <img
-                    src="/info1.png"
-                    class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"
-                />
+                <div class="relative [&_*]:border-4 [&_*]:border-[#FEAB01]">
+                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"/>
+                    <img src="/hackapet.png" class="absolute max-w-44 rounded -top-10 -right-9 z-10 rotate-2"/>
+                    <img src="/hackpadcase.png" class="absolute max-w-44 rounded top-32 -right-24 z-10 -rotate-2"/>
+                </div>
 
                 <img
                     src="/info1.png"
@@ -219,6 +223,11 @@ import HeroProject from "../components/HeroProject.astro";
         </div>
     </div>
 
+
+
+
+
+
     <div class="py-24 bg-[#3B312F]">
         <div class="flex flex-col items-center text-[#FCF3DE]">
             <p class="text-4xl mb-8 text-[#FE5100] germania">How can I join?</p>
@@ -226,11 +235,21 @@ import HeroProject from "../components/HeroProject.astro";
         </div>
     </div>
 
+
+
+
+
+    
     <div class="py-24 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
-        <p class="text-4xl mb-8 germania">
-            Check out Undercity, a 4-day hardware hackathon we hosted a year
-            ago:
-        </p>
+        <div class="mb-8 text-center">
+            <p class="text-4xl germania">
+                What does a hardware hackathon look like?
+            </p>
+            <p class="mt-2 text-xl">
+                Check out <a href="https://undercity.hackclub.com" class="link">Undercity</a>, a 4-day hardware hackathon we hosted at GitHub HQ last year!
+            </p>    
+        </div>
+
 
         <iframe
             src="https://www.youtube.com/embed/kaEFv7e49mo"
