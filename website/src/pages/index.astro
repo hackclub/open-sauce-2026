@@ -1,147 +1,254 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Landing from "../content/landing.md";
-import HeroProject from '../components/HeroProject.astro';
-
+import HeroProject from "../components/HeroProject.astro";
 ---
 
 <Layout>
-
     <div class="hero flex flex-col relative overflow-hidden">
         <nav class="flex items-center px-8 py-4 bg-[#3B312F]">
-            <a href="/"><img src="/outposttext.svg" class="h-6"/></a>
+            <a href="/"><img src="/outposttext.svg" class="h-6" /></a>
         </nav>
 
-        
+        <div
+            class="flex-1 flex items-center justify-center mb-44 relative z-10"
+        >
+            <img
+                src="/checkcorner.svg"
+                class="absolute top-0 right-0 w-32 xl:w-xs opacity-80"
+            />
 
-        <div class="flex-1 flex items-center justify-center mb-44 relative z-10">
-            <img src="/checkcorner.svg" class="absolute top-0 right-0 w-32 xl:w-xs opacity-80"/>
-            
-            <img src="/checkcorner.svg" class="absolute top-0 left-0 w-32 xl:w-xs opacity-80 scale-x-[-1]"/>
+            <img
+                src="/checkcorner.svg"
+                class="absolute top-0 left-0 w-32 xl:w-xs opacity-80 scale-x-[-1]"
+            />
 
             <div class="flex flex-col items-center mx-5">
-
                 <div class="flex flex-row space-x-6 items-center md:-mb-8">
-                    <a href="https://hackclub.com"><img src="/hackclub.png" class="h-10 hover:-rotate-5 hover:scale-102 transition"/></a>
-                    <img src="/with.svg" class="h-6"/>
-                    <a href="https://www.opensauce.com/"><img src="/opensauce.png" class="h-20 hover:rotate-5 hover:scale-102 transition"/></a>
+                    <a href="https://hackclub.com"
+                        ><img
+                            src="/hackclub.png"
+                            class="h-10 hover:-rotate-5 hover:scale-102 transition"
+                        /></a
+                    >
+                    <img src="/with.svg" class="h-6" />
+                    <a href="https://www.opensauce.com/"
+                        ><img
+                            src="/opensauce.png"
+                            class="h-20 hover:rotate-5 hover:scale-102 transition"
+                        /></a
+                    >
                 </div>
 
-                <img src="/outpost.png" class="max-w-5xl w-full"/>
+                <img src="/outpost.png" class="max-w-5xl w-full" />
                 <div class="mt-4 text-xl md:text-2xl text-center text-balance">
-                    <p>3 day hackathon followed by a 2 day showcase at <a href="https://www.opensauce.com/" class="link">Open Sauce</a>!</p>
-                    <p>Make 12 points of hardware projects in <a href="https://stardance.hackclub.com" class="link">Stardance Challenge</a> to qualify.</p>
+                    <p>
+                        3 day hackathon followed by a 2 day showcase at <a
+                            href="https://www.opensauce.com/"
+                            class="link">Open Sauce</a
+                        >!
+                    </p>
+                    <p>
+                        Make 12 points of hardware projects in <a
+                            href="https://stardance.hackclub.com"
+                            class="link">Stardance Challenge</a
+                        > to qualify.
+                    </p>
                 </div>
-                <p class="text-3xl mt-8 text-center mx-10 text-balance">More information coming soon!</p>
+                <p class="text-3xl mt-8 text-center mx-10 text-balance">
+                    More information coming soon!
+                </p>
             </div>
         </div>
 
-
-        <div class="absolute -right-10 xl:right-0 bottom-0 scale-44 md:scale-50 xl:scale-75 2xl:scale-100 origin-bottom-right">
-            <HeroProject src="/projects/hardware_flight.png" class="bottom-100 right-0 w-3xs" description=""/>
-            <HeroProject src="/projects/hardware_twoswap.png" class="absolute bottom-54 right-0 w-xs" description=""/>
-            <HeroProject src="/projects/hardware_defusal.png" class="absolute bottom-0 right-0 w-lg" description=""/>
-            <HeroProject src="/projects/hardware_drone.png" class="absolute bottom-24 right-44 w-lg" description=""/>
-            <HeroProject src="/projects/hardware1.png" class="absolute bottom-0 right-100 w-sm" description=""/>
+        <div
+            class="absolute -right-10 xl:right-0 bottom-0 scale-44 md:scale-50 xl:scale-75 2xl:scale-100 origin-bottom-right"
+        >
+            <HeroProject
+                src="/projects/hardware_flight.png"
+                class="bottom-100 right-0 w-3xs"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware_twoswap.png"
+                class="absolute bottom-54 right-0 w-xs"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware_defusal.png"
+                class="absolute bottom-0 right-0 w-lg"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware_drone.png"
+                class="absolute bottom-24 right-44 w-lg"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware1.png"
+                class="absolute bottom-0 right-100 w-sm"
+                description=""
+            />
         </div>
 
-        <div class="absolute -left-10 xl:left-0 bottom-0 scale-44 md:scale-50 xl:scale-75 2xl:scale-100 origin-bottom-left">
-            <HeroProject src="/projects/hardware_board.png" class="absolute bottom-0 left-72 w-sm" description=""/>
-            <HeroProject src="/projects/hardware_toast.png" class="absolute bottom-0 left-125 w-3xs" description=""/>
-            <HeroProject src="/projects/hardware_split.png" class="absolute bottom-64 left-0 w-sm" description=""/>
-            <HeroProject src="/projects/hardware_jukebox.png" class="absolute bottom-44 left-0 w-2xs" description=""/>
-            <HeroProject src="/projects/hardware_car.png" class="absolute bottom-0 left-0 w-md" description=""/>
-            <HeroProject src="/projects/hardware_ducky.png" class="absolute bottom-16 left-68 w-xs" description=""/>
-            <HeroProject src="/projects/hardware_bobby.png" class="absolute bottom-125 left-0 w-3xs" description=""/>    
+        <div
+            class="absolute -left-10 xl:left-0 bottom-0 scale-44 md:scale-50 xl:scale-75 2xl:scale-100 origin-bottom-left"
+        >
+            <HeroProject
+                src="/projects/hardware_board.png"
+                class="absolute bottom-0 left-72 w-sm"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware_toast.png"
+                class="absolute bottom-0 left-125 w-3xs"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware_split.png"
+                class="absolute bottom-64 left-0 w-sm"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware_jukebox.png"
+                class="absolute bottom-44 left-0 w-2xs"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware_car.png"
+                class="absolute bottom-0 left-0 w-md"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware_ducky.png"
+                class="absolute bottom-16 left-68 w-xs"
+                description=""
+            />
+            <HeroProject
+                src="/projects/hardware_bobby.png"
+                class="absolute bottom-125 left-0 w-3xs"
+                description=""
+            />
         </div>
-
-
-
     </div>
 
-
-
-
     <div class="">
-        <img src="/dividerstripped.svg" class="w-full"/>
+        <img src="/dividerstripped.svg" class="w-full" />
     </div>
 
     <div class="py-24 bg-[#FCF3DE] text-[#3B312F]">
         <div class="flex flex-col items-center">
+            <p class="text-4xl mb-8 germania">
+                This event is split into three parts:
+            </p>
 
-            <p class="text-4xl mb-8 germania">This event is split into three parts:</p>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-                    <div class="bg-[#FEAB01] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg">
-                        <p class="text-3xl mb-4 germania">Part 1: make hardware projects!</p>
-                        <p class="text-xl">u need 12 points in stardance. go log in or something.</p>
-                    </div>
-
-                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"/>
-
-                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:-translate-x-8"/>
-                    <div class="bg-[#FE9802] rounded border-dashed p-8 lg:-translate-x-8 h-full max-w-lg">
-                        <p class="text-3xl mb-4 germania">Part 2: Outpost Hackathon!</p>
-                        <p class="text-xl">Outpost is a 48h hardware hackathon! You'll be in a group of teens and try making a project from start to finish.</p>
-                        <p class="text-xl mt-4">During this time, you'll also be fixing up your stardance hardware projects that might've gotten broken in transport in preparation for the Opensauce showcase!</p>
-                    </div>
-                    
-                    <div class="bg-[#FE8002] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg">
-                        <p class="text-3xl mb-4 germania">Part 3: Showcase at Open Sauce!</p>
-                        <p class="text-xl">Here, you will spend 2 days at a booth with a few other teens showcasing both your hackathon and your Stardance hardware projects.</p>
-                        <p class="text-xl mt-4">Open Sauce is the world's biggest maker faire, with a bunch of engineering creators there too! There's plenty of talks and panels, as well as other booths you can check out.</p>
-                    </div>
-                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"/>
-
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div
+                    class="bg-[#FEAB01] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg"
+                >
+                    <p class="text-3xl mb-4 germania">
+                        Part 1: make hardware projects!
+                    </p>
+                    <p class="text-xl">
+                        Make hardware projects in <a
+                            href="https://stardance.hackclub.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-[#3B312F] hover:underline font-bold"
+                            >Stardance!</a
+                        > Submit your design to get funded, and then build it in-person
+                        after!
+                    </p>
+                    <p class="text-xl mt-4">
+                        Submit to 1 of 3 tiers, and get either $35, $150, or
+                        $350 to get parts! Build a tier 2 or higher to qualify
+                        for Outpost.
+                    </p>
                 </div>
-        </div>        
-    </div>
 
+                <img
+                    src="/info1.png"
+                    class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"
+                />
+
+                <img
+                    src="/info1.png"
+                    class="max-w-lg rounded w-full h-full object-cover lg:-translate-x-8"
+                />
+                <div
+                    class="bg-[#FE9802] rounded border-dashed p-8 lg:-translate-x-8 h-full max-w-lg"
+                >
+                    <p class="text-3xl mb-4 germania">
+                        Part 2: Outpost Hackathon!
+                    </p>
+                    <p class="text-xl">
+                        Outpost is a 48h hardware hackathon! You'll be in a
+                        group of teens and try making a project from start to
+                        finish.
+                    </p>
+                    <p class="text-xl mt-4">
+                        During this time, you'll also be fixing up your
+                        stardance hardware projects that might've gotten broken
+                        in transport in preparation for the Opensauce showcase!
+                    </p>
+                </div>
+
+                <div
+                    class="bg-[#FE8002] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg"
+                >
+                    <p class="text-3xl mb-4 germania">
+                        Part 3: Showcase at Open Sauce!
+                    </p>
+                    <p class="text-xl">
+                        Here, you will spend 2 days at a booth with a few other
+                        teens showcasing both your hackathon and your Stardance
+                        hardware projects.
+                    </p>
+                    <p class="text-xl mt-4">
+                        Open Sauce is the world's biggest maker faire, with a
+                        bunch of engineering creators there too! There's plenty
+                        of talks and panels, as well as other booths you can
+                        check out.
+                    </p>
+                </div>
+                <img
+                    src="/info1.png"
+                    class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"
+                />
+            </div>
+        </div>
+    </div>
 
     <div class="py-24 bg-[#3B312F]">
-
         <div class="flex flex-col items-center text-[#FCF3DE]">
-
             <p class="text-4xl mb-8 text-[#FE5100] germania">How can I join?</p>
             <p>join the slack channel!!!! [#slack channel yipeee]</p>
-
-
         </div>
-
     </div>
 
-
-
-
     <div class="py-24 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
-
-        <p class="text-4xl mb-8 germania">Check out Undercity, a 4-day hardware hackathon we hosted a year ago:</p>
+        <p class="text-4xl mb-8 germania">
+            Check out Undercity, a 4-day hardware hackathon we hosted a year
+            ago:
+        </p>
 
         <iframe
             src="https://www.youtube.com/embed/kaEFv7e49mo"
             class="w-[60%] aspect-video rounded-lg"
-            allowfullscreen
-        />
+            allowfullscreen></iframe>
     </div>
 
-
-
-
     <div class="py-8 bg-[#3B312F]">
-
         <div class="flex flex-col items-center text-[#FCF3DE]">
 
             <p class="text-xl text-[#FEAB01] germania">made by hack club, for teens. yes this is a footer</p>
             <p><a href="https://hackclub.com" class="link">Hack Club</a> ・ Stardance ・ Slack ・ Hackathons </p>
 
         </div>
-
     </div>
 
-
-
-        {/* <a
+    {
+        /* <a
             href="https://hackclub.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -173,6 +280,6 @@ import HeroProject from '../components/HeroProject.astro';
                     >
                 </p>
             </div>
-        </div>*/}  
-    
+        </div>*/
+    }
 </Layout>
