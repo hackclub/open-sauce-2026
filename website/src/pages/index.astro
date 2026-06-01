@@ -133,11 +133,11 @@ import HeroProject from "../components/HeroProject.astro";
     </div>
 
     <div class="">
-        <img src="/dividerstripped.svg" class="w-full" />
+        <img src="/dividerstripped.svg" class="w-full h-20 md:h-auto object-cover" />
     </div>
 
     <div class="py-24 bg-[#FCF3DE] text-[#3B312F]">
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center mx-5">
             <div class="mb-8 text-center">
                 <p class="text-4xl germania">
                     The greatest hardware adventure yet.
@@ -148,7 +148,7 @@ import HeroProject from "../components/HeroProject.astro";
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div
-                    class="bg-[#FEAB01] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg"
+                    class="bg-[#FEAB01] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg relative"
                 >
                     <p class="text-3xl mb-4 germania">
                         Part 1: make hardware projects!
@@ -167,12 +167,13 @@ import HeroProject from "../components/HeroProject.astro";
                         
                         <p class="text-xl mt-4">Then, build your project irl! After you ship the build, you'll earn points to qualify for the Outpost Hackathon.</p>
                     </p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania">June [X] - July 31</p>
                 </div>
 
-                <div class="relative [&_*]:border-4 [&_*]:border-[#FEAB01]">
+                <div class="relative *:border-4 *:border-[#FEAB01]">
                     <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"/>
-                    <img src="/hackapet.png" class="absolute max-w-44 rounded -top-10 -right-9 z-10 rotate-2"/>
-                    <img src="/hackpadcase.png" class="absolute max-w-44 rounded top-32 -right-24 z-10 -rotate-2"/>
+                    <img src="/hackapet.png" class="absolute max-w-44 rounded -top-10 -right-9 z-10 rotate-2 hidden md:block"/>
+                    <img src="/hackpadcase.png" class="absolute max-w-44 rounded top-32 -right-24 z-10 -rotate-2 hidden md:block"/>
                 </div>
 
                 <img
@@ -180,13 +181,13 @@ import HeroProject from "../components/HeroProject.astro";
                     class="max-w-lg rounded w-full h-full object-cover lg:-translate-x-8"
                 />
                 <div
-                    class="bg-[#FE9802] rounded border-dashed p-8 lg:-translate-x-8 h-full max-w-lg"
+                    class="bg-[#FE9802] rounded border-dashed p-8 lg:-translate-x-8 h-full max-w-lg relative"
                 >
                     <p class="text-3xl mb-4 germania">
                         Part 2: Outpost Hackathon!
                     </p>
                     <p class="text-xl">
-                        Outpost is a 48h hardware hackathon! You'll be in a
+                        Outpost is a 48h hardware hackathon in San Francisco! You'll be in a
                         group of teens and try making a project from start to
                         finish.
                     </p>
@@ -195,6 +196,7 @@ import HeroProject from "../components/HeroProject.astro";
                         stardance hardware projects that might've gotten broken
                         in transport in preparation for the Opensauce showcase!
                     </p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-2 -right-6 rotate-2 bg-[#3B312F] text-[#FE5100] germania">July 15 - 17</p>
                 </div>
 
                 <div
@@ -214,6 +216,7 @@ import HeroProject from "../components/HeroProject.astro";
                         of talks and panels, as well as other booths you can
                         check out.
                     </p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-6 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania">July 18 - 19</p>
                 </div>
                 <img
                     src="/info1.png"
@@ -229,24 +232,46 @@ import HeroProject from "../components/HeroProject.astro";
 
 
     <div class="py-24 bg-[#3B312F]">
+
+
+        
         <div class="flex flex-col items-center text-[#FCF3DE]">
-            <p class="text-4xl mb-8 text-[#FE5100] germania">How can I join?</p>
+            <p class="text-4xl mb-4 text-[#FE5100] germania">How can I join?</p>
             <p>join the slack channel!!!! [#slack channel yipeee]</p>
         </div>
+
+        <div class="flex flex-col items-center mt-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 *:border-4 *:rounded *:p-8 text-[#FCF3DE] max-w-6xl w-full">
+                <div class="border-[#FEAB01]">
+                    <p class="text-2xl germania">4 point project (small)</p>
+                </div>
+                <div class="border-[#FEAB01]">
+                    <p class="text-2xl germania">12 point project (medium)</p>
+                </div>
+                <div class="border-[#FEAB01]">
+                    <p class="text-2xl germania">20 point project (complex)</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
     </div>
 
 
 
 
 
-    
+
     <div class="py-24 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
         <div class="mb-8 text-center">
-            <p class="text-4xl germania">
+            <p class="text-4xl text-balance germania">
                 What does a hardware hackathon look like?
             </p>
             <p class="mt-2 text-xl">
-                Check out <a href="https://undercity.hackclub.com" class="link">Undercity</a>, a 4-day hardware hackathon we hosted at GitHub HQ last year!
+                Check out <a href="https://undercity.hackclub.com" class="link germania">Undercity</a>, a 4-day hardware hackathon we hosted at GitHub HQ last year!
             </p>    
         </div>
 
@@ -257,19 +282,33 @@ import HeroProject from "../components/HeroProject.astro";
             allowfullscreen></iframe>
     </div>
 
+
+
+
+    <div class="py-24 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
+        <div class="mb-8 text-center">
+            <p class="text-4xl text-balance germania">20 booths. 80 teenagers. You're invited.</p>
+            <p class="text-4xl text-balance germania">
+                Ready to get started?
+            </p>
+            <p class="mt-2 text-xl">
+                INSERT CTA HERE
+            </p>    
+        </div>
+    </div>
+
+
+
+
+
+
+
     <div class="py-16 bg-[#3B312F]">
-
-
-
-
-
-
-
 
         <div class="flex flex-col items-center text-[#FCF3DE] px-5">
             <div class="grid md:grid-cols-[auto_1fr] gap-8 max-w-6xl w-full">
                 
-                <div class="flex flex-col items-end">
+                <div class="flex flex-col items-center md:items-end">
                     <img src="/outpost.png" class="max-w-xs" />
 
                     <div class="grid grid-cols-2 text-2xl germania mt-4">
