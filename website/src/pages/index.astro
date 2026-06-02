@@ -140,6 +140,10 @@ import Navbar from "../components/Navbar.astro";
         <img src="/dividerstripped.svg" class="w-full h-20 md:h-auto object-cover" />
     </div>
 
+
+
+
+
     <div class="py-24 bg-[#FCF3DE] text-[#3B312F]" id="about">
         <div class="flex flex-col items-center mx-5">
             <div class="mb-8 text-center">
@@ -171,7 +175,7 @@ import Navbar from "../components/Navbar.astro";
                         
                         <p class="text-xl mt-4">Then, build your project irl! After you ship the build, you'll earn points to qualify for the Outpost Hackathon.</p>
                     </p>
-                    <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania">June 1 - July 31</p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">June 1 - July 31</p>
                 </div>
 
                 <div class="relative *:border-4 *:border-[#FEAB01]">
@@ -202,7 +206,7 @@ import Navbar from "../components/Navbar.astro";
                         stardance hardware projects that might've gotten broken
                         in transport in preparation for the Opensauce showcase!
                     </p>
-                    <p class="absolute px-4 py-2 rounded text-2xl -top-2 -right-6 rotate-2 bg-[#3B312F] text-[#FE5100] germania">July 15 - 17</p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-2 -right-6 rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">July 15 - 17</p>
                 </div>
 
                 <div
@@ -222,7 +226,7 @@ import Navbar from "../components/Navbar.astro";
                         of talks and panels, as well as other booths you can
                         check out.
                     </p>
-                    <p class="absolute px-4 py-2 rounded text-2xl -top-6 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania">July 18 - 19</p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-6 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">July 18 - 19</p>
                 </div>
                 <img
                     src="/info1.png"
@@ -237,13 +241,14 @@ import Navbar from "../components/Navbar.astro";
 
 
 
-    <div class="py-24 bg-[#3B312F] text-[#FCF3DE]">
+    <div class="py-24 bg-[#3B312F] text-[#FCF3DE] px-5">
 
 
         
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center text-center">
             <p class="text-4xl mb-4 text-[#FE5100] germania">How can I join?</p>
-            <p class="text-xl">You should also join the <a href="https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ" class="bg-[#C84000]">#outpost</a> channel on <a>Hack Club Slack!</a></p>
+            <p class="text-xl">Join the <a href="https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ" class="bg-[#C84000]">#outpost</a> channel on <a>Hack Club Slack!</a></p>
+            <p class="text-xl mt-2">All projects fall under one of three catagories:</p>
         </div>
 
         <div class="flex flex-col items-center mt-8">
@@ -263,14 +268,11 @@ import Navbar from "../components/Navbar.astro";
             </div>
 
 
-            <div class="mt-8 max-w-3xl text-xl text-center">
+            <div class="mt-8 max-w-4xl text-xl text-center">
                 <p class="">To get a ticket to Outpost (Hackathon + Open Sauce), you need to get to 12 points! (That's equal to any medium or complex project, or three small projects.)</p>
+                <p class="mt-4">When you're finished designing your project, read through [THE DOCS]! Then, submit your repo in [THIS FORM] for review. If approved, we'll give you a grant through HCB.</p>
             </div>
         </div>
-
-
-
-
 
     </div>
 
@@ -292,7 +294,7 @@ import Navbar from "../components/Navbar.astro";
 
         <iframe
             src="https://www.youtube.com/embed/kaEFv7e49mo"
-            class="w-[60%] aspect-video rounded-lg"
+            class="w-[90%] md:w-[60%] aspect-video rounded-lg"
             allowfullscreen></iframe>
     </div>
 
