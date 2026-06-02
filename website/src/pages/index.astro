@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Landing from "../content/landing.md";
 import HeroProject from "../components/HeroProject.astro";
 import Navbar from "../components/Navbar.astro";
+import StartButton from "../components/StartButton.astro";
 ---
 
 <Layout>
@@ -55,11 +56,8 @@ import Navbar from "../components/Navbar.astro";
                         > to qualify.
                     </p>
                 </div>
-                <a href="/info/overview">
-                    <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#3B312F] text-[#34E0BA] rounded hover:scale-105 transistion duration-150">
-                        GET STARTED
-                    </p>
-                </a>
+
+                <StartButton />
 
                 <a href="#about"><img src="/arrows.svg" class="mt-8 bobble"/></a>
             </div>
@@ -229,7 +227,7 @@ import Navbar from "../components/Navbar.astro";
                     <p class="absolute px-4 py-2 rounded text-2xl -top-6 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">July 18 - 19</p>
                 </div>
                 <img
-                    src="/info1.png"
+                    src="/opensauce1.png"
                     class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"
                 />
             </div>
@@ -306,11 +304,7 @@ import Navbar from "../components/Navbar.astro";
             <p class="text-4xl text-balance germania">20 booths. 80 teenagers. You're invited.</p>
             <p class="text-4xl text-balance germania mt-2">Ready to get started?</p>
 
-            <a href="/info/overview">
-                <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#3B312F] text-[#34E0BA] rounded hover:scale-105 transistion duration-150">
-                    GET STARTED
-                </p>
-            </a>
+            <StartButton/>
 
 
         </div>
