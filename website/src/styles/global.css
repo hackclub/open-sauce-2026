@@ -109,3 +109,24 @@ summary::-webkit-details-marker {
 .striped:hover {
   background-position: -60px 0;
 }
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadein 1.0s ease forwards;
+}
+
+.scroll-fade {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

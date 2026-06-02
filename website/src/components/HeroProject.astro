@@ -3,13 +3,14 @@ interface Props {
     src: string;
     class: string;
     description?: string;
+    delay?: string;
 }
 
-const { src, class: className, description } = Astro.props;
+const { src, class: className, description, delay = "0s" } = Astro.props;
 const id = Math.random().toString(36).slice(2);
 ---
 
-<div class={`absolute group ${className}`} id={`wrapper-${id}`}>
+<div class={`absolute group fade-in ${className}`} id={`wrapper-${id}`} style={`animation-delay: ${delay}`}>
     {description && (
         <div class="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity pointer-events-none" id={`tooltip-${id}`}>
             <span class="text-center px-4 py-2 bg-black/60 rounded-lg text-white text-md">

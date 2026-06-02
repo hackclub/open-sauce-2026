@@ -70,26 +70,31 @@ import StartButton from "../components/StartButton.astro";
                 src="/projects/hardware_flight.png"
                 class="bottom-100 right-0 w-3xs"
                 description=""
+                delay="0.1s"
             />
             <HeroProject
                 src="/projects/hardware_twoswap.png"
                 class="absolute bottom-54 right-0 w-xs"
                 description=""
+                delay="0.2s"
             />
             <HeroProject
                 src="/projects/hardware_defusal.png"
                 class="absolute bottom-0 right-0 w-lg"
                 description=""
+                delay="0.3s"
             />
             <HeroProject
                 src="/projects/hardware_drone.png"
                 class="absolute bottom-24 right-44 w-lg"
                 description=""
+                delay="0.4s"
             />
             <HeroProject
                 src="/projects/hardware1.png"
                 class="absolute bottom-0 right-100 w-sm"
                 description=""
+                delay="0.5s"
             />
         </div>
 
@@ -100,36 +105,43 @@ import StartButton from "../components/StartButton.astro";
                 src="/projects/hardware_board.png"
                 class="absolute bottom-0 left-72 w-sm"
                 description=""
+                delay="0.1s"
             />
             <HeroProject
                 src="/projects/hardware_toast.png"
                 class="absolute bottom-0 left-125 w-3xs"
                 description=""
+                delay="0.2s"
             />
             <HeroProject
                 src="/projects/hardware_split.png"
                 class="absolute bottom-64 left-0 w-sm"
                 description=""
+                delay="0.3s"
             />
             <HeroProject
                 src="/projects/hardware_jukebox.png"
                 class="absolute bottom-44 left-0 w-2xs"
                 description=""
+                delay="0.4s"
             />
             <HeroProject
                 src="/projects/hardware_car.png"
                 class="absolute bottom-0 left-0 w-md"
                 description=""
+                delay="0.5s"
             />
             <HeroProject
                 src="/projects/hardware_ducky.png"
                 class="absolute bottom-16 left-68 w-xs"
                 description=""
+                delay="0.5s"
             />
             <HeroProject
                 src="/projects/hardware_bobby.png"
                 class="absolute bottom-125 left-0 w-3xs"
                 description=""
+                delay="0.3s"
             />
         </div>
     </div>
@@ -144,7 +156,7 @@ import StartButton from "../components/StartButton.astro";
 
     <div class="py-24 bg-[#FCF3DE] text-[#3B312F]" id="about">
         <div class="flex flex-col items-center mx-5">
-            <div class="mb-8 text-center">
+            <div class="mb-8 text-center scroll-fade">
                 <p class="text-4xl germania">
                     The greatest hardware adventure yet.
                 </p>
@@ -154,7 +166,7 @@ import StartButton from "../components/StartButton.astro";
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div
-                    class="bg-[#FEAB01] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg relative"
+                    class="bg-[#FEAB01] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg relative scroll-fade"
                 >
                     <p class="text-3xl mb-4 germania">
                         Part 1: make hardware projects!
@@ -176,20 +188,20 @@ import StartButton from "../components/StartButton.astro";
                     <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">June 1 - July 31</p>
                 </div>
 
-                <div class="relative *:border-4 *:border-[#FEAB01]">
+                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
                     <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"/>
                     <img src="/hackapet.png" class="absolute max-w-44 rounded -top-10 -right-9 z-10 rotate-2 hidden md:block"/>
                     <img src="/hackpadcase.png" class="absolute max-w-44 rounded top-32 -right-24 z-10 -rotate-2 hidden md:block"/>
                 </div>
 
-                <div class="relative *:border-4 *:border-[#FEAB01]">
+                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
                     <img src="/undercity2.png" class="max-w-lg rounded w-full h-full object-cover lg:-translate-x-8"/>
                     <img src="/undercity.png" class="absolute max-w-72 rounded -top-2 -left-9 z-10 -rotate-2 hidden md:block"/>
                     <img src="/undercity3.png" class="absolute max-w-44 rounded top-32 -left-24 z-10 rotate-2 hidden md:block"/>                    
                 </div>
 
                 <div
-                    class="bg-[#FE9802] rounded border-dashed p-8 lg:-translate-x-8 h-full max-w-lg relative"
+                    class="bg-[#FE9802] rounded border-dashed p-8 lg:-translate-x-8 h-full max-w-lg relative scroll-fade"
                 >
                     <p class="text-3xl mb-4 germania">
                         Part 2: Outpost Hackathon!
@@ -208,7 +220,7 @@ import StartButton from "../components/StartButton.astro";
                 </div>
 
                 <div
-                    class="bg-[#FE8002] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg relative"
+                    class="bg-[#FE8002] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg relative scroll-fade"
                 >
                     <p class="text-3xl mb-4 germania">
                         Part 3: Showcase at Open Sauce!
@@ -228,7 +240,7 @@ import StartButton from "../components/StartButton.astro";
                 </div>
                 <img
                     src="/opensauce1.png"
-                    class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"
+                    class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8 scroll-fade"
                 />
             </div>
         </div>
@@ -410,3 +422,15 @@ import StartButton from "../components/StartButton.astro";
         </div>*/
     }
 </Layout>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+</script>
