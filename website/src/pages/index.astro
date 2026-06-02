@@ -2,13 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Landing from "../content/landing.md";
 import HeroProject from "../components/HeroProject.astro";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <Layout>
     <div class="hero flex flex-col relative overflow-hidden">
-        <nav class="flex items-center px-8 py-4 bg-[#3B312F]">
-            <a href="/"><img src="/outposttext.svg" class="h-6" /></a>
-        </nav>
+
+        <Navbar />
 
         <div
             class="flex-1 flex items-center justify-center mb-44 relative z-10"
@@ -55,9 +55,13 @@ import HeroProject from "../components/HeroProject.astro";
                         > to qualify.
                     </p>
                 </div>
-                <p class="text-3xl mt-8 text-center mx-10 text-balance">
-                    More information coming soon!
-                </p>
+                <a href="/info/overview">
+                    <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#3B312F] text-[#34E0BA] rounded hover:scale-105 transistion duration-150">
+                        GET STARTED
+                    </p>
+                </a>
+
+                <a href="#about"><img src="/arrows.svg" class="mt-8 bobble"/></a>
             </div>
         </div>
 
@@ -136,7 +140,7 @@ import HeroProject from "../components/HeroProject.astro";
         <img src="/dividerstripped.svg" class="w-full h-20 md:h-auto object-cover" />
     </div>
 
-    <div class="py-24 bg-[#FCF3DE] text-[#3B312F]">
+    <div class="py-24 bg-[#FCF3DE] text-[#3B312F]" id="about">
         <div class="flex flex-col items-center mx-5">
             <div class="mb-8 text-center">
                 <p class="text-4xl germania">
@@ -162,12 +166,12 @@ import HeroProject from "../components/HeroProject.astro";
                             >Stardance</a
                         >, Hack Club's summer program! 
                         
-                        <p class="text-xl mt-4">Submit your design to [OUTPOST] to get a grant up to 350 USD 
+                        <p class="text-xl mt-4">Submit your finished design to [OUTPOST] to get a grant up to 350 USD 
                         to purchase the parts for your project.</p>
                         
                         <p class="text-xl mt-4">Then, build your project irl! After you ship the build, you'll earn points to qualify for the Outpost Hackathon.</p>
                     </p>
-                    <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania">June [X] - July 31</p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania">June 1 - July 31</p>
                 </div>
 
                 <div class="relative *:border-4 *:border-[#FEAB01]">
@@ -176,10 +180,12 @@ import HeroProject from "../components/HeroProject.astro";
                     <img src="/hackpadcase.png" class="absolute max-w-44 rounded top-32 -right-24 z-10 -rotate-2 hidden md:block"/>
                 </div>
 
-                <img
-                    src="/info1.png"
-                    class="max-w-lg rounded w-full h-full object-cover lg:-translate-x-8"
-                />
+                <div class="relative *:border-4 *:border-[#FEAB01]">
+                    <img src="/undercity2.png" class="max-w-lg rounded w-full h-full object-cover lg:-translate-x-8"/>
+                    <img src="/undercity.png" class="absolute max-w-72 rounded -top-2 -left-9 z-10 -rotate-2 hidden md:block"/>
+                    <img src="/undercity3.png" class="absolute max-w-44 rounded top-32 -left-24 z-10 rotate-2 hidden md:block"/>                    
+                </div>
+
                 <div
                     class="bg-[#FE9802] rounded border-dashed p-8 lg:-translate-x-8 h-full max-w-lg relative"
                 >
@@ -200,13 +206,13 @@ import HeroProject from "../components/HeroProject.astro";
                 </div>
 
                 <div
-                    class="bg-[#FE8002] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg"
+                    class="bg-[#FE8002] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg relative"
                 >
                     <p class="text-3xl mb-4 germania">
                         Part 3: Showcase at Open Sauce!
                     </p>
                     <p class="text-xl">
-                        Here, you will spend 2 days at a booth with a few other
+                        Here, you will spend 2 days sharing a booth with other
                         teens showcasing both your hackathon and your Stardance
                         hardware projects.
                     </p>
@@ -237,19 +243,22 @@ import HeroProject from "../components/HeroProject.astro";
         
         <div class="flex flex-col items-center text-[#FCF3DE]">
             <p class="text-4xl mb-4 text-[#FE5100] germania">How can I join?</p>
-            <p>join the slack channel!!!! [#slack channel yipeee]</p>
+            <p class="text-xl">You should also join the <a href="https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ" class="bg-[#C84000]">#outpost</a> channel on <a>Hack Club Slack!</a></p>
         </div>
 
         <div class="flex flex-col items-center mt-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 *:border-4 *:rounded *:p-8 text-[#FCF3DE] max-w-6xl w-full">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 *:border-4 *:rounded *:p-8 text-[#FCF3DE] max-w-6xl w-full *:space-y-2">
                 <div class="border-[#FEAB01]">
                     <p class="text-2xl germania">4 point project (small)</p>
+                    <p>Get up to $25 for the initial design, and then $10 to make changes after building your project!</p>
                 </div>
                 <div class="border-[#FEAB01]">
                     <p class="text-2xl germania">12 point project (medium)</p>
+                    <p>Get up to $120 for the initial design, and then $30 to make changes after building your project!</p>
                 </div>
                 <div class="border-[#FEAB01]">
                     <p class="text-2xl germania">20 point project (complex)</p>
+                    <p>Get up to $300 for the initial design, and then $50 to make changes after building your project!</p>
                 </div>
             </div>
         </div>
@@ -286,14 +295,17 @@ import HeroProject from "../components/HeroProject.astro";
 
 
     <div class="py-24 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
-        <div class="mb-8 text-center">
+        <div class="mb-8 text-center germania">
             <p class="text-4xl text-balance germania">20 booths. 80 teenagers. You're invited.</p>
-            <p class="text-4xl text-balance germania">
-                Ready to get started?
-            </p>
-            <p class="mt-2 text-xl">
-                INSERT CTA HERE
-            </p>    
+            <p class="text-4xl text-balance germania mt-2">Ready to get started?</p>
+
+            <a href="/info/overview">
+                <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#3B312F] text-[#34E0BA] rounded hover:scale-105 transistion duration-150">
+                    GET STARTED
+                </p>
+            </a>
+
+
         </div>
     </div>
 

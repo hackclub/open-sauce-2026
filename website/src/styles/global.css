@@ -6,6 +6,10 @@
     --font-sans: "Hind Madurai", ui-sans-serif, system-ui, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-image: url("/bg.png");
     background-size: cover;
@@ -84,4 +88,13 @@ summary::-webkit-details-marker {
   font-family: "Hind Madurai", sans-serif;
   font-weight: 700;
   font-style: normal;
+}
+
+@keyframes bobble {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+.bobble {
+  animation: bobble 2.0s ease-in-out infinite;
 }
