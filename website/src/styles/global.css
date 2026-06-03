@@ -48,7 +48,7 @@ summary::-webkit-details-marker {
   min-height: 100vh;
   font-family: "Germania One", system-ui;
   color: #3B312F;
-  animation: scrollbg 20s linear infinite;
+  /* animation: scrollbg 20s linear infinite; */
 }
 
 .germania {
