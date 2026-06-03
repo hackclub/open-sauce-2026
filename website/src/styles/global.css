@@ -135,3 +135,21 @@ summary::-webkit-details-marker {
   opacity: 1;
   transform: translateY(0);
 }
+
+.bgcheck1 {
+  background-image: url('/bgcheck1.svg');
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.bgcheck2 {
+  background-image: url('/bgcheck2.svg');
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.bgcheck3 {
+  background-image: url('/bgcheck3.svg');
+  background-size: auto;
+  background-repeat: repeat;
+}

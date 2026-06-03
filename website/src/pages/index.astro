@@ -154,7 +154,7 @@ import StartButton from "../components/StartButton.astro";
 
 
 
-    <div class="py-24 bg-[#FCF3DE] text-[#3B312F]" id="about">
+    <div class="py-24 pb-36 bg-[#FCF3DE] text-[#3B312F]" id="about">
         <div class="flex flex-col items-center mx-5">
             <div class="mb-8 text-center scroll-fade">
                 <p class="text-4xl germania">
@@ -164,9 +164,9 @@ import StartButton from "../components/StartButton.astro";
             </div>
 
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 relative">
                 <div
-                    class="bg-[#FEAB01] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg relative scroll-fade"
+                    class="bg-[#FEAB01] rounded border-dashed p-8 xl:translate-x-8 h-full max-w-lg relative scroll-fade"
                 >
                     <p class="text-3xl mb-4 germania">
                         Part 1: make hardware projects!
@@ -189,19 +189,19 @@ import StartButton from "../components/StartButton.astro";
                 </div>
 
                 <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
-                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"/>
-                    <img src="/hackapet.png" class="absolute max-w-44 rounded -top-10 -right-9 z-10 rotate-2 hidden md:block"/>
-                    <img src="/hackpadcase.png" class="absolute max-w-44 rounded top-32 -right-24 z-10 -rotate-2 hidden md:block"/>
+                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover xl:translate-x-8"/>
+                    <img src="/hackapet.png" class="absolute max-w-44 rounded -top-10 -right-9 z-10 rotate-2 hidden xl:block"/>
+                    <img src="/hackpadcase.png" class="absolute max-w-44 rounded top-32 -right-24 z-10 -rotate-2 hidden xl:block"/>
                 </div>
 
                 <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
-                    <img src="/undercity2.png" class="max-w-lg rounded w-full h-full object-cover lg:-translate-x-8"/>
+                    <img src="/undercity2.png" class="max-w-lg rounded w-full h-full object-cover xl:-translate-x-8"/>
                     {/* <img src="/undercity.png" class="absolute max-w-72 rounded -top-2 -left-9 z-10 -rotate-2 hidden md:block"/>
                     <img src="/undercity3.png" class="absolute max-w-44 rounded top-32 -left-24 z-10 rotate-2 hidden md:block"/>  */}                  
                 </div>
 
                 <div
-                    class="bg-[#FE9802] rounded border-dashed p-8 lg:-translate-x-8 h-full max-w-lg relative scroll-fade"
+                    class="bg-[#FE9802] rounded border-dashed p-8 xl:-translate-x-8 h-full max-w-lg relative scroll-fade"
                 >
                     <p class="text-3xl mb-4 germania">
                         Part 2: Outpost Hackathon!
@@ -220,7 +220,7 @@ import StartButton from "../components/StartButton.astro";
                 </div>
 
                 <div
-                    class="bg-[#FE8002] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg relative scroll-fade"
+                    class="bg-[#FE8002] rounded border-dashed p-8 xl:translate-x-8 h-full max-w-lg relative scroll-fade"
                 >
                     <p class="text-3xl mb-4 germania">
                         Part 3: Showcase at Open Sauce!
@@ -241,55 +241,65 @@ import StartButton from "../components/StartButton.astro";
                 <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
                     <img
                         src="/opensauce1.png"
-                        class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8 scroll-fade"
+                        class="max-w-lg rounded w-full h-full object-cover xl:translate-x-8 scroll-fade"
                     />
+                    <p class="germania bg-[#3B312F] text-[#FE5100] py-1 px-4 absolute bottom-0 right-0 xl:translate-x-8 border-0">Hack Club's Open Sauce booth from last year!</p>
                 </div>
+                <img src="/spark.png" class="absolute -bottom-36 -left-36 xl:-left-28 w-48"/>
 
             </div>
         </div>
     </div>
 
-    <div class="relative hidden md:block">
-        <img src="/divider1.png" class="absolute max-w-4xl -top-48"/>
-        <img src="/divider1.png" class="absolute max-w-4xl -top-48 scale-x-[-1] right-0"/>
-    </div>
 
 
 
 
+    <div class="bg-[#3B312F] text-[#FCF3DE] relative">
+        <img src="/divider2.png" class="absolute -top-16 w-full h-32 md:h-auto object-cover overflow-hidden"/>
+
+        <div class="py-36 px-5">
 
 
-    <div class="py-24 bg-[#3B312F] text-[#FCF3DE] px-5">
+            
+            <div class="flex flex-col items-center text-center">
+                <p class="text-4xl mb-4 text-[#FE5100] germania">What can I make?</p>
+                <p class="text-xl mt-2">All projects fall under one of three catagories, sorted by how hard they are to make:</p>
+            </div>
 
-
-        
-        <div class="flex flex-col items-center text-center">
-            <p class="text-4xl mb-4 text-[#FE5100] germania">How can I join?</p>
-            <p class="text-xl">Join the <a href="https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ" class="bg-[#C84000]">#outpost</a> channel on <a>Hack Club Slack!</a></p>
-            <p class="text-xl mt-2">All projects fall under one of three catagories:</p>
-        </div>
-
-        <div class="flex flex-col items-center mt-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 *:border-4 *:rounded *:p-8 max-w-6xl w-full *:space-y-2">
-                <div class="border-[#FEAB01]">
-                    <p class="text-2xl germania">4 point project (small)</p>
-                    <p>Get up to $25 for the initial design, and then $10 to make changes after building your project!</p>
+            <div class="flex flex-col items-center mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 *:rounded *:p-8 max-w-6xl w-full *:space-y-2 text-[#3B312F] text-center text-lg">
+                    <div class="bgcheck1">
+                        <p class="text-2xl germania">4 point project (small)</p>
+                        <p>Get up to $25 for the initial design, and then $10 to make changes after building your project!</p>
+                        <p>ADD EXAMPLES</p>
+                    </div>
+                    <div class="bgcheck2">
+                        <p class="text-2xl germania">12 point project (medium)</p>
+                        <p>Get up to $120 for the initial design, and then $30 to make changes after building your project!</p>
+                    </div>
+                    <div class="bgcheck3">
+                        <p class="text-2xl germania">20 point project (complex)</p>
+                        <p>Get up to $300 for the initial design, and then $50 to make changes after building your project!</p>
+                    </div>
                 </div>
-                <div class="border-[#FEAB01]">
-                    <p class="text-2xl germania">12 point project (medium)</p>
-                    <p>Get up to $120 for the initial design, and then $30 to make changes after building your project!</p>
+
+                <div class="mt-8 max-w-4xl text-xl text-center">
+                    <p>To have it counted as part of this program you need to track your time! When you log into Stardance, click on "new hardware project". </p>
+                    <p>You also need to include [REPO, README, ALL FILES, ETC] when you ship your design.</p>
+
+
                 </div>
-                <div class="border-[#FEAB01]">
-                    <p class="text-2xl germania">20 point project (complex)</p>
-                    <p>Get up to $300 for the initial design, and then $50 to make changes after building your project!</p>
+
+
+                <div class="mt-8 max-w-4xl text-xl text-center">
+                    <p class="">To get a ticket to Outpost (Hackathon + Open Sauce), you need to get to 12 points! (That's equal to any medium or complex project, or three small projects.)</p>
+                    <p class="mt-4">When you're finished designing your project, read through [THE DOCS]! Then, submit your repo in [THIS FORM] for review. If approved, we'll give you a grant through HCB.</p>
+                    <p class="text-xl">Join the <a href="https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ" class="bg-[#C84000]">#outpost</a> channel on <a>Hack Club Slack!</a></p>
+
                 </div>
             </div>
 
-
-            <div class="mt-8 max-w-4xl text-xl text-center">
-                <p class="">To get a ticket to Outpost (Hackathon + Open Sauce), you need to get to 12 points! (That's equal to any medium or complex project, or three small projects.)</p>
-                <p class="mt-4">When you're finished designing your project, read through [THE DOCS]! Then, submit your repo in [THIS FORM] for review. If approved, we'll give you a grant through HCB.</p>
-            </div>
         </div>
 
     </div>
@@ -300,7 +310,7 @@ import StartButton from "../components/StartButton.astro";
 
 
     <div class="py-24 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
-        <div class="mb-8 text-center">
+        <div class="mb-8 text-center scroll-fade">
             <p class="text-4xl text-balance germania">
                 What does a hardware hackathon look like?
             </p>
@@ -312,11 +322,15 @@ import StartButton from "../components/StartButton.astro";
 
         <iframe
             src="https://www.youtube.com/embed/kaEFv7e49mo"
-            class="w-[90%] md:w-[60%] aspect-video rounded-lg"
+            class="w-[90%] md:w-[60%] aspect-video rounded-lg scroll-fade"
             allowfullscreen></iframe>
     </div>
 
 
+    <div class="relative *:absolute *:md:max-w-2xl *:-top-14 *:md:-top-36">
+        <img src="/divider1.png" class="w-[48%]"/>
+        <img src="/divider1.png" class="scale-x-[-1] w-[48%] right-0"/>
+    </div>
 
 
     <div class="py-24 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
@@ -336,9 +350,10 @@ import StartButton from "../components/StartButton.astro";
 
 
 
-    <div class="py-16 bg-[#3B312F]">
+    <div class="pb-16 bg-[#3B312F] relative">
+        <img src="/divider2.png" class="absolute -top-16 w-full h-32 md:h-auto object-cover overflow-hidden"/>
 
-        <div class="flex flex-col items-center text-[#FCF3DE] px-5">
+        <div class="pt-36 flex flex-col items-center text-[#FCF3DE] px-5">
             <div class="grid md:grid-cols-[auto_1fr] gap-8 max-w-6xl w-full">
                 
                 <div class="flex flex-col items-center md:items-end">
