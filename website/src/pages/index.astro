@@ -154,7 +154,9 @@ import StartButton from "../components/StartButton.astro";
 
 
 
-    <div class="py-24 pb-36 bg-[#FCF3DE] text-[#3B312F]" id="about">
+    <div class="py-24 pb-36 bg-[#FCF3DE] text-[#3B312F] overflow-hidden relative" id="about">
+        <img src="/circuitlines.png" class="absolute bottom-0 right-0"/>
+        <img src="/circuitlines.png" class="absolute top-0 left-0 rotate-180"/>
         <div class="flex flex-col items-center mx-5">
             <div class="mb-8 text-center scroll-fade">
                 <p class="text-4xl germania">
@@ -183,7 +185,7 @@ import StartButton from "../components/StartButton.astro";
                         <p class="text-xl mt-4">Submit your finished design to [OUTPOST] to get a grant up to 350 USD 
                         to purchase the parts for your project.</p>
                         
-                        <p class="text-xl mt-4">Then, build your project irl! After you ship the build, you'll earn points to qualify for the Outpost Hackathon.</p>
+                        <p class="text-xl mt-4">Then, build your project irl! After you <span class="font-bold">ship the build, you'll earn points to qualify for the Outpost Hackathon.</span></p>
                     </p>
                     <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">June 1 - July 31</p>
                 </div>
@@ -238,13 +240,14 @@ import StartButton from "../components/StartButton.astro";
                     </p>
                     <p class="absolute px-4 py-2 rounded text-2xl -top-6 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">July 18 - 19</p>
                 </div>
-                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
+                <div class="relative scroll-fade">
                     <img
                         src="/opensauce1.png"
-                        class="max-w-lg rounded w-full h-full object-cover xl:translate-x-8 scroll-fade"
+                        class="max-w-lg rounded w-full h-full object-cover xl:translate-x-8 border-4 border-[#FEAB01]"
                     />
-                    <p class="germania bg-[#3B312F] text-[#FE5100] py-1 px-4 absolute bottom-0 right-0 xl:translate-x-8 border-0">Hack Club's Open Sauce booth from last year!</p>
+                    <p class="germania bg-[#3B312F] text-[#FE5100] py-1 px-4 absolute bottom-0 right-0 xl:translate-x-8 border-4 border-[#FEAB01]">Hack Club's Open Sauce booth from last year!</p>
                 </div>
+                <img src="/spark.png" class="absolute -top-36 -right-26 xl:-right-36 w-36 rotate-180"/>
                 <img src="/spark.png" class="absolute -bottom-36 -left-36 xl:-left-28 w-48"/>
 
             </div>
@@ -263,8 +266,12 @@ import StartButton from "../components/StartButton.astro";
 
             
             <div class="flex flex-col items-center text-center">
-                <p class="text-4xl mb-4 text-[#FE5100] germania">What can I make?</p>
-                <p class="text-xl mt-2">All projects fall under one of three catagories, sorted by how hard they are to make:</p>
+                <div class="relative">
+                    <img src="/bgsparktext.png" class="max-w-md -rotate-2"/>
+                    <p class="text-4xl germania absolute inset-0 flex items-center justify-center pt-2">What can I make?</p>  
+                </div>
+                
+                <p class="text-xl mt-8">All projects fall under one of three catagories, sorted by how hard they are to make:</p>
             </div>
 
             <div class="flex flex-col items-center mt-8">
