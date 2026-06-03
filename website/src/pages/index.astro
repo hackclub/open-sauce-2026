@@ -196,8 +196,8 @@ import StartButton from "../components/StartButton.astro";
 
                 <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
                     <img src="/undercity2.png" class="max-w-lg rounded w-full h-full object-cover lg:-translate-x-8"/>
-                    <img src="/undercity.png" class="absolute max-w-72 rounded -top-2 -left-9 z-10 -rotate-2 hidden md:block"/>
-                    <img src="/undercity3.png" class="absolute max-w-44 rounded top-32 -left-24 z-10 rotate-2 hidden md:block"/>                    
+                    {/* <img src="/undercity.png" class="absolute max-w-72 rounded -top-2 -left-9 z-10 -rotate-2 hidden md:block"/>
+                    <img src="/undercity3.png" class="absolute max-w-44 rounded top-32 -left-24 z-10 rotate-2 hidden md:block"/>  */}                  
                 </div>
 
                 <div
@@ -238,12 +238,20 @@ import StartButton from "../components/StartButton.astro";
                     </p>
                     <p class="absolute px-4 py-2 rounded text-2xl -top-6 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">July 18 - 19</p>
                 </div>
-                <img
-                    src="/opensauce1.png"
-                    class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8 scroll-fade"
-                />
+                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
+                    <img
+                        src="/opensauce1.png"
+                        class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8 scroll-fade"
+                    />
+                </div>
+
             </div>
         </div>
+    </div>
+
+    <div class="relative hidden md:block">
+        <img src="/divider1.png" class="absolute max-w-4xl -top-48"/>
+        <img src="/divider1.png" class="absolute max-w-4xl -top-48 scale-x-[-1] right-0"/>
     </div>
 
 
