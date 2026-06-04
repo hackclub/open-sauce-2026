@@ -11,12 +11,12 @@ html {
 }
 
 body {
-    background-image: url("/bg.png");
+    background-image: url("/typotexture.svg");
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     font-family: "Hind Madurai", sans-serif;
+    background-color: #FCF3DE;
+    color: #3B312F;
 }
 
 .prose hr {
