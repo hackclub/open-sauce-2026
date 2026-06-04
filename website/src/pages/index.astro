@@ -64,7 +64,8 @@ import StartButton from "../components/StartButton.astro";
         </div>
 
         <div
-            class="absolute -right-10 xl:right-0 bottom-0 scale-44 md:scale-50 xl:scale-75 2xl:scale-100 origin-bottom-right"
+            class="absolute -right-10 xl:right-0 bottom-0 origin-bottom-right"
+            style="transform: scale(clamp(0.3, min(80vh, 55vw) / 800px, 1));"
         >
             <HeroProject
                 src="/projects/hardware_flight.png"
@@ -99,7 +100,8 @@ import StartButton from "../components/StartButton.astro";
         </div>
 
         <div
-            class="absolute -left-10 xl:left-0 bottom-0 scale-44 md:scale-50 xl:scale-75 2xl:scale-100 origin-bottom-left"
+            class="absolute -left-10 xl:left-0 bottom-0 origin-bottom-left"
+            style="transform: scale(clamp(0.3, min(80vh, 55vw) / 800px, 1));"
         >
             <HeroProject
                 src="/projects/hardware_board.png"
@@ -233,7 +235,7 @@ import StartButton from "../components/StartButton.astro";
                         hardware projects.
                     </p>
                     <p class="text-xl mt-4">
-                        Open Sauce is the world's biggest maker faire, with a
+                        <a href="https://opensauce.com" class="font-bold link">Open Sauce</a> is the world's biggest maker faire, with a
                         bunch of engineering creators there too! There's plenty
                         of talks and panels, as well as other booths you can
                         check out.
