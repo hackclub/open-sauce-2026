@@ -158,7 +158,7 @@ import StartButton from "../components/StartButton.astro";
 
     <div class="py-24 pb-36 bg-[#FCF3DE] text-[#3B312F] overflow-hidden relative" id="about">
         <img src="/circuitlines.png" class="absolute bottom-0 right-0"/>
-        <img src="/circuitlines.png" class="absolute top-0 -left-80 xl:left-0 rotate-180"/>
+        <img src="/circuitlines.png" class="absolute top-0 -left-100 md:-left-50 xl:left-0 rotate-180"/>
         <div class="flex flex-col items-center mx-5">
             <div class="mb-8 text-center scroll-fade">
                 <p class="text-4xl germania text-balance">
@@ -356,25 +356,36 @@ import StartButton from "../components/StartButton.astro";
 
 
 
-    <div class="py-12 pb-36 px-5 bg-[#FCF3DE]">
-        <div class="flex flex-col justify-center items-center">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl *:border-4 *:border-dashed *:border-[#3B312F] *:rounded *:p-4 *:space-y-2">
+    <div class="pt-6 pb-36 px-5 bg-[#FCF3DE] relative z-0">
+
+        <div class="flex flex-col justify-center items-center z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl *:border-4 *:border-dashed *:border-[#3B312F] *:bg-[#FCF3DE] *:rounded *:p-8 *:space-y-2">
                 <div>
-                    <p class="text-4xl germania">question</p>
-                    <p class="text-lg">answer</p>
+                    <p class="text-2xl germania">Is this all free?</p>
+                    <p class="text-lg">Yes! We will cover your food and stay during the event. If you qualify, all you need to do is get yourself there!</p>
                 </div>
                 <div>
-                    <p class="text-4xl germania">question</p>
-                    <p class="text-lg">answer</p>
+                    <p class="text-2xl germania">Can I get grants without going to the IRL event?</p>
+                    <p class="text-lg">Yes! The flow is the same; start it through Stardance, then fill out the grant form!</p>
+                </div>
+                <div>
+                    <p class="text-2xl germania">Can I go to Open Sauce without going to the hackathon?</p>
+                    <p class="text-lg">You can buy yourself a general admission ticket through the Stardance shop separately. Housing will still be covered for the duration of Open Sauce - you won't be able to booth there though.</p>
+                </div>
+                <div>
+                    <p class="text-2xl germania">How many grants are you giving out?</p>
+                    <p class="text-lg">As many as people submit projects! Feel free to build as many projects as you want - but remember, it still needs to meet quality criteria to be approved!</p>
                 </div>
 
             </div>
 
-
-
         </div>
-            
 
+        <img src="/circuitlines.png" class="absolute bottom-0 right-0 -z-10 hidden xl:block"/>
+        <img src="/circuitlines.png" class="absolute bottom-0 left-0 -z-10 scale-x-[-1]"/>
+
+
+            
     </div>
 
 
