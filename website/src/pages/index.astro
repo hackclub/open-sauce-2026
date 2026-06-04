@@ -12,7 +12,7 @@ import StartButton from "../components/StartButton.astro";
         <Navbar />
 
         <div
-            class="flex-1 flex items-center justify-center mb-44 relative z-10"
+            class="flex-1 flex items-center justify-center md:mb-20 xl:mb-44 relative z-10"
         >
             <img
                 src="/checkcorner.svg"
@@ -192,13 +192,13 @@ import StartButton from "../components/StartButton.astro";
                     <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">June 1 - July 31</p>
                 </div>
 
-                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
+                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade hidden xl:block">
                     <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover xl:translate-x-8"/>
                     <img src="/hackapet.png" class="absolute max-w-44 rounded -top-10 -right-9 z-10 rotate-2 hidden xl:block"/>
                     <img src="/hackpadcase.png" class="absolute max-w-44 rounded top-32 -right-24 z-10 -rotate-2 hidden xl:block"/>
                 </div>
 
-                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade">
+                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade hidden xl:block">
                     <img src="/undercity2.png" class="max-w-lg rounded w-full h-full object-cover xl:-translate-x-8"/>
                     {/* <img src="/undercity.png" class="absolute max-w-72 rounded -top-2 -left-9 z-10 -rotate-2 hidden md:block"/>
                     <img src="/undercity3.png" class="absolute max-w-44 rounded top-32 -left-24 z-10 rotate-2 hidden md:block"/>  */}                  
@@ -319,7 +319,7 @@ import StartButton from "../components/StartButton.astro";
 
 
 
-    <div class="py-24 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
+    <div class="py-24 px-5 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
         <div class="mb-8 text-center scroll-fade">
             <p class="text-4xl text-balance germania">
                 What does a hardware hackathon look like?
@@ -412,7 +412,7 @@ import StartButton from "../components/StartButton.astro";
                     </div>
                 </div>
 
-                <div class="flex flex-col gap-4 justify-center text-lg opacity-80">
+                <div class="flex flex-col gap-4 justify-center text-lg opacity-80 mx-5 md:mx-0">
                     <p>
                         Hack Club is a 501(c)(3) nonprofit and network of 100k+ technical high schoolers. 
                         We believe you learn best by building, so we're creating community and providing grants so you can make awesome projects. 
