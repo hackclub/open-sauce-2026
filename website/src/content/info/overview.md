@@ -1,10 +1,10 @@
 # Overview
 
-Welcome aboard. This event is split into 3 parts, here's how it works:
+Welcome aboard. This event is split into 4 parts, here's how it works:
 
 _Make sure to check out the [FAQ](/info/faq) if you have any questions!_
 
-## 1. Design & build projects (May 1st-July 31st)
+## 1. Design hardware projects (May 1st - July 1st)
 
 The first step is designing and building hardware projects! Submit designs to collect funding. Build them to collect points.
 
@@ -44,11 +44,17 @@ Some examples:
 
 _feel like this funding isn't enough? dm @alexren!_
 
-**To qualify for Open Sauce, you'll need to collect at least 12 points! This also comes with a $75 USD travel stipend.** Every extra 4 points (on top of the original 12) qualifies you for another $75 USD domestic / 150 USD int'l
+## 2. Build your hardware projects & collect points (May 1st - July 31st)
 
-Needs based stipends available!
+Next, build your hardware designs! For every hardware build you submit, you'll collect points that progress you closer to Outpost
 
-## 2. Sauceathon! (July 15-17th)
+Once that's done, submit it [here](build-form)
+
+**To qualify for Outpost, you'll need to collect at least 12 points! This also comes with a $75 USD travel stipend.** Every extra 4 points (on top of the original 12) qualifies you for another $75 USD domestic / 150 USD int'l
+
+_Needs based stipends available! You can apply for them here_
+
+## 3. Sauceathon!
 
 After collecting 12 points, bring your projects and join 70 other teenagers for the very first teen-only sauceathon. The pitch? For the next 3 days, build the booth that you'll demo at Open Sauce.
 
@@ -58,4 +64,4 @@ You and your teammates will be demoing at 1 of 20 booths in a special Hack-Club 
 
 ---
 
-The first step is to come up with an idea. Send a project you're thinking of in [#open-sauce-2026-ideas](https://hackclub.enterprise.slack.com/archives/C0B1MBF96GZ)!
+The first step is to come up with an idea. Send a project you're thinking of in [#outpost-ideas](https://hackclub.enterprise.slack.com/archives/C0B1MBF96GZ)!
