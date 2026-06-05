@@ -1,146 +1,527 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Landing from "../content/landing.md";
-import HeroProject from '../components/HeroProject.astro';
-
+import HeroProject from "../components/HeroProject.astro";
+import Navbar from "../components/Navbar.astro";
+import StartButton from "../components/StartButton.astro";
 ---
 
 <Layout>
-
     <div class="hero flex flex-col relative overflow-hidden">
-        <nav class="flex items-center px-8 py-4 bg-[#3B312F]">
-            <a href="/"><img src="/outposttext.svg" class="h-6"/></a>
-        </nav>
+        <img src="/dividerstripped.svg" class="w-full h-8 md:h-auto object-cover" />
 
-        
+        {/*<Navbar /> */}
 
-        <div class="flex-1 flex items-center justify-center mb-44 relative z-10">
-            <img src="/checkcorner.svg" class="absolute top-0 right-0 w-32 xl:w-xs opacity-80"/>
-            
-            <img src="/checkcorner.svg" class="absolute top-0 left-0 w-32 xl:w-xs opacity-80 scale-x-[-1]"/>
+        <div
+            class="flex-1 flex items-center justify-center md:mb-20 xl:mb-44 relative z-10"
+        >
+            <img
+                src="/checkcorner.svg"
+                class="absolute top-0 right-0 w-32 xl:w-xs opacity-80"
+            />
 
-            <div class="flex flex-col items-center mx-5">
+            <img
+                src="/checkcorner.svg"
+                class="absolute top-0 left-0 w-32 xl:w-xs opacity-80 scale-x-[-1]"
+            />
 
+            <div class="flex flex-col items-center mx-5 py-12 md:mt-6 xl:mt-12">
                 <div class="flex flex-row space-x-6 items-center md:-mb-8">
-                    <a href="https://hackclub.com"><img src="/hackclub.png" class="h-10 hover:-rotate-5 hover:scale-102 transition"/></a>
-                    <img src="/with.svg" class="h-6"/>
-                    <a href="https://www.opensauce.com/"><img src="/opensauce.png" class="h-20 hover:rotate-5 hover:scale-102 transition"/></a>
+                    <a href="https://hackclub.com"
+                        ><img
+                            src="/hackclub.png"
+                            class="h-10 hover:-rotate-5 hover:scale-102 transition"
+                        /></a
+                    >
+                    <img src="/with.svg" class="h-6" />
+                    <a href="https://www.opensauce.com/"
+                        ><img
+                            src="/opensauce.png"
+                            class="h-20 hover:rotate-5 hover:scale-102 transition"
+                        /></a
+                    >
                 </div>
 
-                <img src="/outpost.png" class="max-w-5xl w-full"/>
+                <img src="/outpost.png" class="max-w-3xl w-full" />
                 <div class="mt-4 text-xl md:text-2xl text-center text-balance">
-                    <p>3 day hackathon followed by a 2 day showcase at <a href="https://www.opensauce.com/" class="link">Open Sauce</a>!</p>
-                    <p>Make 12 points of hardware projects in <a href="https://stardance.hackclub.com" class="link">Stardance Challenge</a> to qualify.</p>
+                    <p>
+                        4-day hackathon followed by a 2-day showcase at <a
+                            href="https://www.opensauce.com/"
+                            class="link">Open Sauce</a
+                        >!
+                    </p>
+                    <p>
+                        Make hardware projects in <a
+                            href="https://stardance.hackclub.com"
+                            class="link">Stardance Challenge</a
+                        > to qualify.
+                    </p>
+                    <p class="text-[16px] mt-2">By <a href="https://hackclub.com" class="link">Hack Club</a>, for teens 13-18.</p>
                 </div>
-                <p class="text-3xl mt-8 text-center mx-10 text-balance">More information coming soon!</p>
+
+                <StartButton />
+
+                <a href="#about"><img src="/arrows.svg" class="mt-8 bobble"/></a>
+            </div>
+        </div>
+
+        <div
+            class="absolute -right-10 xl:right-0 bottom-0 origin-bottom-right"
+            style="transform: scale(clamp(0.3, min(80vh, 48vw) / 800px, 1));"
+        >
+            <HeroProject
+                src="/projects/hardware_flight.png"
+                class="bottom-100 right-0 w-3xs"
+                description=""
+                delay="0.1s"
+            />
+            <HeroProject
+                src="/projects/hardware_twoswap.png"
+                class="absolute bottom-54 right-0 w-xs"
+                description=""
+                delay="0.2s"
+            />
+            <HeroProject
+                src="/projects/hardware_defusal.png"
+                class="absolute bottom-0 right-0 w-lg"
+                description=""
+                delay="0.3s"
+            />
+            <HeroProject
+                src="/projects/hardware_drone.png"
+                class="absolute bottom-24 right-44 w-lg"
+                description=""
+                delay="0.4s"
+            />
+            <HeroProject
+                src="/projects/hardware1.png"
+                class="absolute bottom-0 right-100 w-sm"
+                description=""
+                delay="0.5s"
+            />
+        </div>
+
+        <div
+            class="absolute -left-10 xl:left-0 bottom-0 origin-bottom-left"
+            style="transform: scale(clamp(0.3, min(80vh, 48vw) / 800px, 1));"
+        >
+            <HeroProject
+                src="/projects/hardware_board.png"
+                class="absolute bottom-0 left-72 w-sm"
+                description=""
+                delay="0.1s"
+            />
+            <HeroProject
+                src="/projects/hardware_toast.png"
+                class="absolute bottom-0 left-125 w-3xs"
+                description=""
+                delay="0.2s"
+            />
+            <HeroProject
+                src="/projects/hardware_split.png"
+                class="absolute bottom-64 left-0 w-sm"
+                description=""
+                delay="0.3s"
+            />
+            <HeroProject
+                src="/projects/hardware_jukebox.png"
+                class="absolute bottom-44 left-0 w-2xs"
+                description=""
+                delay="0.4s"
+            />
+            <HeroProject
+                src="/projects/hardware_car.png"
+                class="absolute bottom-0 left-0 w-md"
+                description=""
+                delay="0.5s"
+            />
+            <HeroProject
+                src="/projects/hardware_ducky.png"
+                class="absolute bottom-16 left-68 w-xs"
+                description=""
+                delay="0.5s"
+            />
+            <HeroProject
+                src="/projects/hardware_bobby.png"
+                class="absolute bottom-125 left-0 w-3xs"
+                description=""
+                delay="0.3s"
+            />
+        </div>
+    </div>
+
+    <div class="">
+        <img src="/dividerstripped.svg" class="w-full h-8 md:h-auto object-cover" />
+    </div>
+
+
+
+
+
+    <div class="py-24 pb-36 text-[#3B312F] overflow-hidden relative" id="about">
+        <img src="/circuitlines.png" class="absolute bottom-0 right-0"/>
+        <img src="/circuitlines.png" class="absolute top-0 -left-100 md:-left-50 xl:left-0 rotate-180"/>
+        <div class="flex flex-col items-center mx-5">
+            <div class="mb-8 text-center scroll-fade">
+                <p class="text-4xl germania text-balance">
+                    The greatest hardware adventure yet.
+                </p>
+                <p class="text-xl mt-2">This event is split into three parts:</p>
+            </div>
+
+
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-8 relative">
+                <div
+                    class="bg-[#FEAB01] rounded border-dashed p-8 xl:translate-x-8 h-full max-w-lg relative scroll-fade"
+                >
+                    <p class="text-3xl mb-4 germania">
+                        Part 1: make hardware projects!
+                    </p>
+                    <p class="text-xl">
+                        Design the PCB and CAD to your hardware projects in <a
+                            href="https://stardance.hackclub.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-[#3B312F] hover:underline font-bold link"
+                            >Stardance</a
+                        >, Hack Club's summer program! 
+                        
+                        <p class="text-xl mt-4">Submit your finished design to get a grant up to 350+ USD 
+                        to purchase the parts for your project. Build your project irl!</p>
+                        
+                        <p class="text-xl mt-4">Then, buy a ticket to Outpost (hackathon + showcase) in the Stardance Shop!</p>
+                    </p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">June 1 - July 31</p>
+                </div>
+
+                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade hidden xl:block">
+                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover xl:translate-x-8"/>
+                    <img src="/hackapet.png" class="absolute max-w-44 rounded -top-10 -right-9 z-10 rotate-2 hidden xl:block"/>
+                    <img src="/hackpadcase.png" class="absolute max-w-44 rounded top-32 -right-24 z-10 -rotate-2 hidden xl:block"/>
+                </div>
+
+                <div class="relative *:border-4 *:border-[#FEAB01] scroll-fade hidden xl:block">
+                    <img src="/undercity2.png" class="max-w-lg rounded w-full h-full object-cover xl:-translate-x-8"/>
+                    {/* <img src="/undercity.png" class="absolute max-w-72 rounded -top-2 -left-9 z-10 -rotate-2 hidden md:block"/>
+                    <img src="/undercity3.png" class="absolute max-w-44 rounded top-32 -left-24 z-10 rotate-2 hidden md:block"/>  */}                  
+                </div>
+
+                <div
+                    class="bg-[#FE9802] rounded border-dashed p-8 xl:-translate-x-8 h-full max-w-lg relative scroll-fade"
+                >
+                    <p class="text-3xl mb-4 germania">
+                        Part 2: Outpost Hackathon!
+                    </p>
+                    <p class="text-xl">
+                        Outpost is a 72h hardware hackathon in San Francisco! You'll be in a
+                        group of teens and try making a project from start to
+                        finish.
+                    </p>
+                    <p class="text-xl mt-4">
+                        During this time, you'll also be fixing up your
+                        stardance hardware projects that might've gotten broken
+                        in transport in preparation for the Open Sauce showcase!
+                    </p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-2 -right-6 rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">July 14 - 17</p>
+                </div>
+
+                <div
+                    class="bg-[#FE8002] rounded border-dashed p-8 xl:translate-x-8 h-full max-w-lg relative scroll-fade"
+                >
+                    <p class="text-3xl mb-4 germania">
+                        Part 3: Showcase at Open Sauce!
+                    </p>
+                    <p class="text-xl">
+                        Here, you will spend 2 days sharing a booth with other
+                        teens showcasing both your hackathon and your Stardance
+                        hardware projects.
+                    </p>
+                    <p class="text-xl mt-4">
+                        <a href="https://opensauce.com" class="font-bold link">Open Sauce</a> is the world's biggest maker faire, with a
+                        bunch of engineering creators there too! There's plenty
+                        of talks and panels, as well as other booths you can
+                        check out.
+                    </p>
+                    <p class="absolute px-4 py-2 rounded text-2xl -top-6 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">July 18 - 19</p>
+                </div>
+                <div class="relative scroll-fade">
+                    <img
+                        src="/rmrrf.png"
+                        class="max-w-lg rounded w-full h-full object-cover xl:translate-x-8 border-4 border-[#FEAB01]"
+                    />
+                    <p class="germania bg-[#3B312F] text-[#FE5100] py-1 px-4 absolute bottom-0 right-0 xl:translate-x-8 border-4 border-[#FEAB01]">Hack Club's RMRRF booth!</p>
+                </div>
+                <img src="/spark.png" class="absolute -top-36 -right-26 xl:-right-36 w-36 rotate-180 hidden xl:block"/>
+                <img src="/spark.png" class="absolute -bottom-36 -left-36 xl:-left-28 w-48"/>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="bg-[#3B312F] text-[#FCF3DE] relative">
+        <img src="/divider2.png" class="absolute -top-16 w-full h-32 md:h-auto object-cover overflow-hidden"/>
+        <img src="/divider3.png" class="absolute -bottom-8 md:-bottom-16 xl:-bottom-20 w-full"/>
+
+        <div class="py-36 px-5">
+
+
+            
+            <div class="flex flex-col items-center text-center">
+                <div class="relative">
+                    <img src="/bgsparktext.png" class="max-w-md -rotate-2 w-full"/>
+                    <p class="text-4xl germania absolute inset-0 flex items-center justify-center pt-2">What can I make?</p>  
+                </div>
+                
+                <p class="text-xl mt-8">All projects fall under one of these catagories, sorted by how hard they are to make.</p>
+                <p class="text-xl mt-2">Their catagory determines the grant amount you'll get to build them:</p>
+            </div>
+
+            <div class="flex flex-col items-center mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 *:rounded *:p-8 max-w-6xl w-full *:space-y-2 text-[#3B312F] text-center text-lg text-balance germania">
+                    <div class="bgcheck1">
+                        <p class="text-2xl">B tier project</p>
+                        <p>"beginner"</p>
+                        <p>Up to $25 grant</p>
+                        <p>30% Stardust off Outpost ticket</p>
+                        <p>Macropads and very basic PCBs are examples of B tier projects!</p>
+                    </div>
+                    <div class="bgcheck4">
+                        <p class="text-2xl">A tier project</p>
+                        <p>"average"</p>
+                        <p>Up to $120 grant</p>
+                        <p>50% Stardust off Outpost ticket</p>
+                        <p>Keyboards and devboards are examples of A tier projects!</p>
+                    </div>
+                    <div class="bgcheck2">
+                        <p class="text-2xl">S tier project</p>
+                        <p>"superb"</p>
+                        <p>Up to $180 grant</p>
+                        <p>100% Stardust off Outpost ticket</p>
+                    </div>
+                </div>
+
+                <div class=" mt-4 bgcheck3 rounded p-8 max-w-2xl w-full space-y-2 text-[#3B312F] text-center text-lg germania">
+                    <p class="text-2xl">X tier project</p>
+                    <p>For projects that are truly out of this world that need higher grants, we'll work with you on a one-on-one basis to get you a higher grant, as well as travel stipends.</p>
+                    <p>100% Stardust off Outpost ticket</p>
+                </div>
+
+                <div class="mt-8 max-w-4xl text-xl text-center">
+                    <p>If you add a cool twist and polish to your project, we will also bump it up a tier. 
+                        For example, a keyboard is normally an A tier project, but the <a href="https://github.com/geg-tech/biblicallyaccuratekeyboard" class="link">Biblically Accurate Keyboard</a> counts as S tier.</p>
+                </div>
+
+                <div class="mt-8 max-w-4xl text-xl text-center">
+                    <p>To have it counted as part of this program you need to track your time via Stardance! Follow the guides on the Stardance page. Read them before you submit!</p>
+                </div>
+
+                <div class="mt-6 mx-10">
+                    <p class="mb-1 text-center germania">Ready to apply for a grant?</p>
+                    <a href="https://forms.hackclub.com/outpost-design">
+                        <p class="text-3xl text-center text-balance px-6 py-2 bg-[#FEAB01] text-[#3B312F] rounded hover:scale-105 transition duration-150 striped germania">
+                            SUBMIT HARDWARE DESIGN
+                        </p>
+                    </a>
+                </div>
+
+
+
+                <img src="/starlings.png" class=" my-8 h-12"/>
+
+
+                <div class="max-w-4xl text-xl text-center mb-4">
+                    <p class="germania text-3xl mb-4">Purchase the ticket in the <a href="https://stardance.hackclub.com/shop" class="link">Stardance Shop</a>!</p>
+                </div>
+
+                <div class="max-w-4xl text-xl">
+                    <div class="flex flex-col md:flex-row space-x-4 justify-center items-center text-center">
+                        <div>
+                            <p class="mb-4">The Outpost Ticket is purchasable in the <a href="https://stardance.hackclub.com/shop" class="link">Stardance Shop</a> for Stardust! You can get discounts from Stardust by designing hardware projects.</p>
+                            <p>It is locked behind the Super Hardware Builder status, which you can get by shipping a cool built hardware project.</p>
+                        </div>
+                        {/* <img src="/stardance1.png" class="rounded max-w-sm md:max-w-3xs mx-auto mt-4 md:my-0"/>*/}
+
+                    </div>
+                    
+                </div>
+
+
+                {/* 
+
+                <div class="grid grid-cols-3 gap-2 germania">
+                    <a href="https://stardance.hackclub.com">
+                        <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#513029] text-[#34E0BA] rounded hover:scale-105 transition duration-150 striped">
+                            instructions
+                        </p>
+                    </a>
+                    <a href="https://stardance.hackclub.com">
+                        <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#59332a] text-[#34E0BA] rounded hover:scale-105 transition duration-150 striped">
+                            submission form
+                        </p>
+                    </a>
+                    <a href="https://stardance.hackclub.com">
+                        <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#59332a] text-[#34E0BA] rounded hover:scale-105 transition duration-150 striped">
+                            slack
+                        </p>
+                    </a>
+
+                </div>
+            */}
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="py-24 px-5 flex flex-col items-center text-[#3B312F]">
+        <div class="mb-8 text-center scroll-fade">
+            <p class="text-4xl text-balance germania">
+                What does a hardware hackathon look like?
+            </p>
+            <p class="mt-2 text-xl">
+                Check out <a href="https://undercity.hackclub.com" class="link germania">Undercity</a>, a 4-day hardware hackathon we hosted at GitHub HQ last year!
+            </p>    
+        </div>
+
+
+        <iframe
+            src="https://www.youtube.com/embed/kaEFv7e49mo"
+            class="w-[90%] md:w-[60%] aspect-video rounded-lg scroll-fade"
+            allowfullscreen></iframe>
+    </div>
+
+
+    <div class="relative *:absolute *:md:max-w-2xl *:-top-14 *:md:-top-36">
+        <img src="/divider1.png" class="w-[48%]"/>
+        <img src="/divider1.png" class="scale-x-[-1] w-[48%] right-0"/>
+    </div>
+
+
+    <div class="pt-24 pb-12 flex flex-col items-center text-[#3B312F]">
+        <div class="mb-8 text-center germania">
+            <p class="text-4xl text-balance germania scroll-fade">20 booths. 80 teenagers. You're invited.</p>
+            <p class="text-4xl text-balance germania mt-2 scroll-fade">Ready to get started?</p>
+
+            <StartButton class="scroll-fade"/>
+
+            <a href="https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ">
+                <p class="text-3xl mt-2 text-center mx-10 text-balance px-6 py-2 bg-[#3B312F] text-[#FE5100] rounded hover:scale-105 transition duration-150 striped">
+                    JOIN #OUTPOST ON SLACK
+                </p>
+            </a>
+
+        </div>
+    </div>
+
+
+
+    <div class="pt-6 pb-36 px-5 relative z-0">
+
+        <div class="flex flex-col justify-center items-center z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl *:border-4 *:border-dashed *:border-[#3B312F] *:bg-[#FCF3DE] *:rounded *:p-8 *:space-y-2">
+                <div class="scroll-fade">
+                    <p class="text-2xl germania">Is this all free?</p>
+                    <p class="text-lg">Yes! We will cover your food and stay during the event. If you qualify, all you need to do is get yourself there!</p>
+                </div>
+                <div class="scroll-fade">
+                    <p class="text-2xl germania">Can I get grants without going to the IRL event?</p>
+                    <p class="text-lg">Yes! The flow is the same; start it through Stardance, then fill out the grant form!</p>
+                </div>
+                <div class="scroll-fade">
+                    <p class="text-2xl germania">Can I go to Open Sauce without going to the hackathon?</p>
+                    <p class="text-lg">You can buy yourself a general admission ticket through the Stardance shop separately. You can also purchase housing for the duration of Open Sauce.</p>
+                </div>
+                <div class="scroll-fade">
+                    <p class="text-2xl germania">How many grants are you giving out?</p>
+                    <p class="text-lg">As many projects as people submit! Feel free to build as many projects as you want - but remember, it still needs to meet quality criteria to be approved!</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <img src="/circuitlines.png" class="absolute bottom-0 right-0 -z-10 hidden xl:block"/>
+        <img src="/circuitlines.png" class="absolute bottom-0 left-0 -z-10 scale-x-[-1]"/>
+
+
+            
+    </div>
+
+
+
+
+
+
+
+    <div class="pb-16 bg-[#3B312F] relative">
+        <img src="/divider2.png" class="absolute -top-16 w-full h-32 md:h-auto object-cover overflow-hidden"/>
+
+        <div class="pt-36 flex flex-col items-center text-[#FCF3DE] px-5">
+            <div class="grid md:grid-cols-[auto_1fr] gap-8 max-w-6xl w-full">
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <img src="/outpost.png" class="max-w-xs" />
+
+                    <div class="grid grid-cols-2 text-2xl germania mt-4">
+                        <p class="text-right pr-4"><a href="https://hackclub.com" class="hover:underline">Hack Club</a></p>
+                        <p class="text-left pl-4"><a href="https://stardance.hackclub.com" class="hover:underline">Stardance</a></p>
+                        <p class="text-right pr-4"><a href="https://slack.hackclub.com/" class="hover:underline">Slack</a></p>
+                        <p class="text-left pl-4"><a href="https://hackclub.com/clubs" class="hover:underline">Clubs</a></p>
+                        <p class="text-right pr-4"><a href="https://hackathons.hackclub.com/" class="hover:underline">Hackathons</a></p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-4 justify-center text-lg opacity-80 mx-5 md:mx-0">
+                    <p>
+                        <a href="https://hackclub.com" class="link">Hack Club</a> is a 501(c)(3) nonprofit and network of 100k+ technical high schoolers. 
+                        We believe you learn best by building, so we're creating community and providing grants so you can make awesome projects. 
+                        In the past few years, we've sent 
+                        <a href="https://www.youtube.com/watch?v=ufMUJ9D1fi8" class="link">30 teen hackers hiking the Pacific Crest Trail</a>, 
+                        <a href="https://www.youtube.com/watch?v=8iM1W8kXrQA" class="link">hosted a hackathon for the worst ideas</a>, and ran the 
+                        <a href="https://www.youtube.com/watch?v=kaEFv7e49mo" class="link">largest hardware hackathon at GitHub HQ</a>.
+                    </p>
+                    <p>
+                        Read about Hack Club in 
+                        <a href="https://www.wsj.com/articles/teen-hackers-try-to-convince-parents-they-are-up-to-good-11569922200" class="link">The Wall Street Journal</a>, 
+                        <a href="https://www.cbsnews.com/sanfrancisco/news/hack-club-hosts-teen-coders-san-francisco/" class="link">CBS News</a>, and 
+                        <a href="https://www.nasa.gov/learning-resources/space-out-this-summer-with-variety-of-nasa-stem-activities/" class="link">NASA.gov</a>, or watch us 
+                        <a href="https://www.youtube.com/live/UbfAhFxDomE?si=5DiK1_hGqKrB_r50&t=7033" class="link">on stage with AMD CEO Lisa Su at CES</a>.
+                    </p>
+                    <p>
+                        Made with ♥︎ by teenagers, for teenagers at Hack Club
+                    </p>
+                </div>
+
             </div>
         </div>
 
 
-        <div class="absolute -right-10 xl:right-0 bottom-0 scale-44 md:scale-50 xl:scale-75 2xl:scale-100 origin-bottom-right">
-            <HeroProject src="/projects/hardware_flight.png" class="bottom-100 right-0 w-3xs" description=""/>
-            <HeroProject src="/projects/hardware_twoswap.png" class="absolute bottom-54 right-0 w-xs" description=""/>
-            <HeroProject src="/projects/hardware_defusal.png" class="absolute bottom-0 right-0 w-lg" description=""/>
-            <HeroProject src="/projects/hardware_drone.png" class="absolute bottom-24 right-44 w-lg" description=""/>
-            <HeroProject src="/projects/hardware1.png" class="absolute bottom-0 right-100 w-sm" description=""/>
-        </div>
 
-        <div class="absolute -left-10 xl:left-0 bottom-0 scale-44 md:scale-50 xl:scale-75 2xl:scale-100 origin-bottom-left">
-            <HeroProject src="/projects/hardware_board.png" class="absolute bottom-0 left-72 w-sm" description=""/>
-            <HeroProject src="/projects/hardware_toast.png" class="absolute bottom-0 left-125 w-3xs" description=""/>
-            <HeroProject src="/projects/hardware_split.png" class="absolute bottom-64 left-0 w-sm" description=""/>
-            <HeroProject src="/projects/hardware_jukebox.png" class="absolute bottom-44 left-0 w-2xs" description=""/>
-            <HeroProject src="/projects/hardware_car.png" class="absolute bottom-0 left-0 w-md" description=""/>
-            <HeroProject src="/projects/hardware_ducky.png" class="absolute bottom-16 left-68 w-xs" description=""/>
-            <HeroProject src="/projects/hardware_bobby.png" class="absolute bottom-125 left-0 w-3xs" description=""/>    
-        </div>
+
+
+
+
+
+
+
 
 
 
     </div>
-    
 
-    {/* 
-
-    <div class="">
-        <img src="/dividerstripped.svg" class="w-full"/>
-    </div>
-
-    <div class="py-24 bg-[#FCF3DE] text-[#3B312F]">
-        <div class="flex flex-col items-center">
-
-            <p class="text-4xl mb-8 germania">This event is split into three parts:</p>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-
-                    <div class="bg-[#FEAB01] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg">
-                        <p class="text-3xl mb-4 germania">Part 1: make hardware projects!</p>
-                        <p class="text-xl">u need 12 points in stardance. go log in or something.</p>
-                    </div>
-
-                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"/>
-
-                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:-translate-x-8"/>
-                    <div class="bg-[#FE9802] rounded border-dashed p-8 lg:-translate-x-8 h-full max-w-lg">
-                        <p class="text-3xl mb-4 germania">Part 2: Outpost Hackathon!</p>
-                        <p class="text-xl">Outpost is a 48h hardware hackathon! You'll be in a group of teens and try making a project from start to finish.</p>
-                        <p class="text-xl mt-4">During this time, you'll also be fixing up your stardance hardware projects that might've gotten broken in transport in preparation for the Opensauce showcase!</p>
-                    </div>
-                    
-                    <div class="bg-[#FE8002] rounded border-dashed p-8 lg:translate-x-8 h-full max-w-lg">
-                        <p class="text-3xl mb-4 germania">Part 3: Showcase at Open Sauce!</p>
-                        <p class="text-xl">Here, you will spend 2 days at a booth with a few other teens showcasing both your hackathon and your Stardance hardware projects.</p>
-                        <p class="text-xl mt-4">Open Sauce is the world's biggest maker faire, with a bunch of engineering creators there too! There's plenty of talks and panels, as well as other booths you can check out.</p>
-                    </div>
-                    <img src="/info1.png" class="max-w-lg rounded w-full h-full object-cover lg:translate-x-8"/>
-
-                </div>
-        </div>        
-    </div>
-
-
-    <div class="py-24 bg-[#3B312F]">
-
-        <div class="flex flex-col items-center text-[#FCF3DE]">
-
-            <p class="text-4xl mb-8 text-[#FE5100] germania">How can I join?</p>
-            <p>join the slack channel!!!! [#slack channel yipeee]</p>
-
-
-        </div>
-
-    </div>
-
-
-
-
-    <div class="py-24 flex flex-col items-center bg-[#FCF3DE] text-[#3B312F]">
-
-        <p class="text-4xl mb-8 germania">Check out Undercity, a 4-day hardware hackathon we hosted a year ago:</p>
-
-        <iframe
-            src="https://www.youtube.com/embed/kaEFv7e49mo"
-            class="w-[60%] aspect-video rounded-lg"
-            allowfullscreen
-        />
-    </div>
-
-
-
-
-    <div class="py-8 bg-[#3B312F]">
-
-        <div class="flex flex-col items-center text-[#FCF3DE]">
-
-            <p class="text-xl text-[#FE5100] germania">made by hack club, for teens. yes this is a footer</p>
-
-        </div>
-
-    </div>
-
-    */}
-
-        {/* <a
+    {
+        /* <a
             href="https://hackclub.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -172,6 +553,18 @@ import HeroProject from '../components/HeroProject.astro';
                     >
                 </p>
             </div>
-        </div>*/}  
-    
+        </div>*/
+    }
 </Layout>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.scroll-fade').forEach(el => observer.observe(el));
+</script>
