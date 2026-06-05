@@ -8,7 +8,7 @@ A booth is an 8x8 feet area that you'll share with your teammates to actually de
 
 ![image](https://cdn.hackclub.com/019e45c8-371b-701c-af2f-c88daf56ea25/paste-1779287202837.png)
 
-There'll be scrap wood, cardboard, hot glue, and old electronics to throw together whatever crazy things you can. This is also the time to fix anything that might've broken on the way there!
+There'll be scrap wood, cardboard, hot glue, and electronics to throw together whatever crazy things you can. This is also the time to fix anything that might've broken on the way there!
 
 After that, you'll transport your hackathon projects + qualifier projects to Open Sauce and set it up to exhibit, where you'll be showcasing your projects to 35,000+ people that weekend with your fellow Hack Clubbers!
 
@@ -20,7 +20,7 @@ After that, you'll transport your hackathon projects + qualifier projects to Ope
 - **OAK**: Oakland San Francisco Bay Airport. A secondary airport that may _potentially_ have cheaper flights.
 - **San Mateo County Event Center**: This is the primary location that Open Sauce is hosted during the day
 - **Housing during Open Sauce**: This is where everybody will be staying during the nights between exhibit days!
-- **Hackathon Venue**: This is where the hackathon will be hosted! The exact location is currently undecided, but it will be in the general Bay Area.
+- **Hackathon Venue**: This is where the hackathon will be hosted! The exact location is currently undecided, but it will be in San Francisco
 
 ### Rough schedule:
 
@@ -40,6 +40,12 @@ After that, you'll transport your hackathon projects + qualifier projects to Ope
 - Lunch & dinner grants will be earnable through collecting points.
 
 Our safeguarding policies can be found here: https://hackclub.com/safeguarding
+
+## Qualifying timeline:
+
+- June 1st: Program launches officialy;
+- Submit your build by July 5th
+-
 
 ## Contact:
 
