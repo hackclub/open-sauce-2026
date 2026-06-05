@@ -153,3 +153,9 @@ summary::-webkit-details-marker {
   background-size: auto;
   background-repeat: repeat;
 }
+
+.bgcheck4 {
+  background-image: url('/bgcheck4.svg');
+  background-size: auto;
+  background-repeat: repeat;
+}

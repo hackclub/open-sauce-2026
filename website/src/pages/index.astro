@@ -274,24 +274,34 @@ import StartButton from "../components/StartButton.astro";
                     <p class="text-4xl germania absolute inset-0 flex items-center justify-center pt-2">What can I make?</p>  
                 </div>
                 
-                <p class="text-xl mt-8">All projects fall under one of three catagories, sorted by how hard they are to make:</p>
+                <p class="text-xl mt-8">All projects fall under one of three catagories, sorted by how hard they are to make.</p>
+                <p class="text-xl mt-2">Their catagory determines the grant amount you'll get to build them:</p>
             </div>
 
             <div class="flex flex-col items-center mt-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 *:rounded *:p-8 max-w-6xl w-full *:space-y-2 text-[#3B312F] text-center text-lg">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 *:rounded *:p-8 max-w-6xl w-full *:space-y-2 text-[#3B312F] text-center text-lg">
                     <div class="bgcheck1">
-                        <p class="text-2xl germania">4 point project (small)</p>
+                        <p class="text-2xl germania">B tier project</p>
                         <p>Get up to $25 for the initial design, and then $10 to make changes after building your project!</p>
                         <p>ADD EXAMPLES</p>
                     </div>
-                    <div class="bgcheck2">
-                        <p class="text-2xl germania">12 point project (medium)</p>
+                    <div class="bgcheck4">
+                        <p class="text-2xl germania">A tier project</p>
                         <p>Get up to $120 for the initial design, and then $30 to make changes after building your project!</p>
                     </div>
+                    <div class="bgcheck2">
+                        <p class="text-2xl germania">S tier project</p>
+                        <p>Get up to $180 for the initial design, and then $40 to make changes after building your project!</p>
+                    </div>
                     <div class="bgcheck3">
-                        <p class="text-2xl germania">20 point project (complex)</p>
+                        <p class="text-2xl germania">X tier project</p>
                         <p>Get up to $300 for the initial design, and then $50 to make changes after building your project!</p>
                     </div>
+                </div>
+
+                <div class="mt-8 max-w-4xl text-xl text-center">
+                    <p>If you add a cool twist to your project, we will also bump it up a tier!</p>
+                    <p>For example, the bibically accurate keyboard would normally be [x] tier. But now it is X.</p>
                 </div>
 
                 <div class="mt-8 max-w-4xl text-xl text-center">
@@ -303,7 +313,8 @@ import StartButton from "../components/StartButton.astro";
 
 
                 <div class="mt-8 max-w-4xl text-xl text-center">
-                    <p class="">To get a ticket to Outpost (Hackathon + Open Sauce), you need to get to 12 points! (That's equal to any medium or complex project, or three small projects.)</p>
+                    <p class="">To get a ticket to Outpost (Hackathon + Open Sauce), purchase it in the Stardance Shop!</p>
+                    <p>You will need: (1) supercar status, and (2) 300 stardust. You can get a discount from the 300 stardust point by designing hardware projects.</p>
                     <p class="mt-4">When you're finished designing your project, read through [THE DOCS]! Then, submit your repo in [THIS FORM] for review. If approved, we'll give you a grant through HCB.</p>
                     <p class="text-xl">Join the <a href="https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ" class="bg-[#C84000]">#outpost</a> channel on <a>Hack Club Slack!</a></p>
 
@@ -417,12 +428,9 @@ import StartButton from "../components/StartButton.astro";
                         Hack Club is a 501(c)(3) nonprofit and network of 100k+ technical high schoolers. 
                         We believe you learn best by building, so we're creating community and providing grants so you can make awesome projects. 
                         In the past few years, we've sent 
-                        <a href="https://www.youtube.com/watch?v=ufMUJ9D1fi8" class="link">30 teen hackers hiking the Pacific Crest Trail</a>
-                        , 
-                        <a href="https://www.youtube.com/watch?v=8iM1W8kXrQA" class="link">hosted a hackathon for the worst ideas</a>
-                        , and ran the 
-                        <a href="https://www.youtube.com/watch?v=kaEFv7e49mo" class="link">largest hardware hackathon at GitHub HQ</a>
-                        .
+                        <a href="https://www.youtube.com/watch?v=ufMUJ9D1fi8" class="link">30 teen hackers hiking the Pacific Crest Trail</a>, 
+                        <a href="https://www.youtube.com/watch?v=8iM1W8kXrQA" class="link">hosted a hackathon for the worst ideas</a>, and ran the 
+                        <a href="https://www.youtube.com/watch?v=kaEFv7e49mo" class="link">largest hardware hackathon at GitHub HQ</a>.
                     </p>
                     <p>
                         Read about Hack Club in 
