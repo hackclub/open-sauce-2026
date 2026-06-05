@@ -17,6 +17,7 @@ body {
     font-family: "Hind Madurai", sans-serif;
     background-color: #FCF3DE;
     color: #3B312F;
+    text-wrap: pretty;
 }
 
 .prose hr {

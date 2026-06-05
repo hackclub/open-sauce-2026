@@ -8,8 +8,9 @@ import StartButton from "../components/StartButton.astro";
 
 <Layout>
     <div class="hero flex flex-col relative overflow-hidden">
+        <img src="/dividerstripped.svg" class="w-full h-8 md:h-auto object-cover" />
 
-        <Navbar />
+        {/*<Navbar /> */}
 
         <div
             class="flex-1 flex items-center justify-center md:mb-20 xl:mb-44 relative z-10"
@@ -24,7 +25,7 @@ import StartButton from "../components/StartButton.astro";
                 class="absolute top-0 left-0 w-32 xl:w-xs opacity-80 scale-x-[-1]"
             />
 
-            <div class="flex flex-col items-center mx-5 py-2">
+            <div class="flex flex-col items-center mx-5 py-12 md:mt-6 xl:mt-12">
                 <div class="flex flex-row space-x-6 items-center md:-mb-8">
                     <a href="https://hackclub.com"
                         ><img
@@ -41,20 +42,21 @@ import StartButton from "../components/StartButton.astro";
                     >
                 </div>
 
-                <img src="/outpost.png" class="max-w-5xl w-full" />
+                <img src="/outpost.png" class="max-w-3xl w-full" />
                 <div class="mt-4 text-xl md:text-2xl text-center text-balance">
                     <p>
-                        3 day hackathon followed by a 2 day showcase at <a
+                        4-day hackathon followed by a 2-day showcase at <a
                             href="https://www.opensauce.com/"
                             class="link">Open Sauce</a
                         >!
                     </p>
                     <p>
-                        Make 12 points of hardware projects in <a
+                        Make hardware projects in <a
                             href="https://stardance.hackclub.com"
                             class="link">Stardance Challenge</a
                         > to qualify.
                     </p>
+                    <p class="text-[16px] mt-2">By <a href="https://hackclub.com" class="link">Hack Club</a>, for teens 13-18.</p>
                 </div>
 
                 <StartButton />
@@ -65,7 +67,7 @@ import StartButton from "../components/StartButton.astro";
 
         <div
             class="absolute -right-10 xl:right-0 bottom-0 origin-bottom-right"
-            style="transform: scale(clamp(0.3, min(80vh, 48w) / 800px, 1));"
+            style="transform: scale(clamp(0.3, min(80vh, 48vw) / 800px, 1));"
         >
             <HeroProject
                 src="/projects/hardware_flight.png"
@@ -149,7 +151,7 @@ import StartButton from "../components/StartButton.astro";
     </div>
 
     <div class="">
-        <img src="/dividerstripped.svg" class="w-full h-20 md:h-auto object-cover" />
+        <img src="/dividerstripped.svg" class="w-full h-8 md:h-auto object-cover" />
     </div>
 
 
@@ -184,10 +186,10 @@ import StartButton from "../components/StartButton.astro";
                             >Stardance</a
                         >, Hack Club's summer program! 
                         
-                        <p class="text-xl mt-4">Submit your finished design to [OUTPOST] to get a grant up to 350 USD 
-                        to purchase the parts for your project.</p>
+                        <p class="text-xl mt-4">Submit your finished design to get a grant up to 350+ USD 
+                        to purchase the parts for your project. Build your project irl!</p>
                         
-                        <p class="text-xl mt-4">Then, build your project irl! After you <span class="font-bold">ship the build, you'll earn points to qualify for the Outpost Hackathon.</span></p>
+                        <p class="text-xl mt-4">Then, buy a ticket to Outpost (hackathon + showcase) in the Stardance Shop!</p>
                     </p>
                     <p class="absolute px-4 py-2 rounded text-2xl -top-8 -left-6 -rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">June 1 - July 31</p>
                 </div>
@@ -211,14 +213,14 @@ import StartButton from "../components/StartButton.astro";
                         Part 2: Outpost Hackathon!
                     </p>
                     <p class="text-xl">
-                        Outpost is a 48h hardware hackathon in San Francisco! You'll be in a
+                        Outpost is a 72h hardware hackathon in San Francisco! You'll be in a
                         group of teens and try making a project from start to
                         finish.
                     </p>
                     <p class="text-xl mt-4">
                         During this time, you'll also be fixing up your
                         stardance hardware projects that might've gotten broken
-                        in transport in preparation for the Opensauce showcase!
+                        in transport in preparation for the Open Sauce showcase!
                     </p>
                     <p class="absolute px-4 py-2 rounded text-2xl -top-2 -right-6 rotate-2 bg-[#3B312F] text-[#FE5100] germania hidden md:block">July 14 - 17</p>
                 </div>
@@ -244,10 +246,10 @@ import StartButton from "../components/StartButton.astro";
                 </div>
                 <div class="relative scroll-fade">
                     <img
-                        src="/opensauce1.png"
+                        src="/rmrrf.png"
                         class="max-w-lg rounded w-full h-full object-cover xl:translate-x-8 border-4 border-[#FEAB01]"
                     />
-                    <p class="germania bg-[#3B312F] text-[#FE5100] py-1 px-4 absolute bottom-0 right-0 xl:translate-x-8 border-4 border-[#FEAB01]">Hack Club's Open Sauce booth from last year!</p>
+                    <p class="germania bg-[#3B312F] text-[#FE5100] py-1 px-4 absolute bottom-0 right-0 xl:translate-x-8 border-4 border-[#FEAB01]">Hack Club's RMRRF booth!</p>
                 </div>
                 <img src="/spark.png" class="absolute -top-36 -right-26 xl:-right-36 w-36 rotate-180 hidden xl:block"/>
                 <img src="/spark.png" class="absolute -bottom-36 -left-36 xl:-left-28 w-48"/>
@@ -274,51 +276,103 @@ import StartButton from "../components/StartButton.astro";
                     <p class="text-4xl germania absolute inset-0 flex items-center justify-center pt-2">What can I make?</p>  
                 </div>
                 
-                <p class="text-xl mt-8">All projects fall under one of three catagories, sorted by how hard they are to make.</p>
+                <p class="text-xl mt-8">All projects fall under one of these catagories, sorted by how hard they are to make.</p>
                 <p class="text-xl mt-2">Their catagory determines the grant amount you'll get to build them:</p>
             </div>
 
             <div class="flex flex-col items-center mt-8">
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 *:rounded *:p-8 max-w-6xl w-full *:space-y-2 text-[#3B312F] text-center text-lg">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 *:rounded *:p-8 max-w-6xl w-full *:space-y-2 text-[#3B312F] text-center text-lg text-balance germania">
                     <div class="bgcheck1">
-                        <p class="text-2xl germania">B tier project</p>
-                        <p>Get up to $25 for the initial design, and then $10 to make changes after building your project!</p>
-                        <p>ADD EXAMPLES</p>
+                        <p class="text-2xl">B tier project</p>
+                        <p>"beginner"</p>
+                        <p>Up to $25 grant</p>
+                        <p>30% Stardust off Outpost ticket</p>
+                        <p>Macropads and very basic PCBs are examples of B tier projects!</p>
                     </div>
                     <div class="bgcheck4">
-                        <p class="text-2xl germania">A tier project</p>
-                        <p>Get up to $120 for the initial design, and then $30 to make changes after building your project!</p>
+                        <p class="text-2xl">A tier project</p>
+                        <p>"average"</p>
+                        <p>Up to $120 grant</p>
+                        <p>50% Stardust off Outpost ticket</p>
+                        <p>Keyboards and devboards are examples of A tier projects!</p>
                     </div>
                     <div class="bgcheck2">
-                        <p class="text-2xl germania">S tier project</p>
-                        <p>Get up to $180 for the initial design, and then $40 to make changes after building your project!</p>
-                    </div>
-                    <div class="bgcheck3">
-                        <p class="text-2xl germania">X tier project</p>
-                        <p>Get up to $300 for the initial design, and then $50 to make changes after building your project!</p>
+                        <p class="text-2xl">S tier project</p>
+                        <p>"superb"</p>
+                        <p>Up to $180 grant</p>
+                        <p>100% Stardust off Outpost ticket</p>
                     </div>
                 </div>
 
-                <div class="mt-8 max-w-4xl text-xl text-center">
-                    <p>If you add a cool twist to your project, we will also bump it up a tier!</p>
-                    <p>For example, the bibically accurate keyboard would normally be [x] tier. But now it is X.</p>
+                <div class=" mt-4 bgcheck3 rounded p-8 max-w-2xl w-full space-y-2 text-[#3B312F] text-center text-lg germania">
+                    <p class="text-2xl">X tier project</p>
+                    <p>For projects that are truly out of this world that need higher grants, we'll work with you on a one-on-one basis to get you a higher grant, as well as travel stipends.</p>
+                    <p>100% Stardust off Outpost ticket</p>
                 </div>
 
                 <div class="mt-8 max-w-4xl text-xl text-center">
-                    <p>To have it counted as part of this program you need to track your time! When you log into Stardance, click on "new hardware project". </p>
-                    <p>You also need to include [REPO, README, ALL FILES, ETC] when you ship your design.</p>
-
-
+                    <p>If you add a cool twist and polish to your project, we will also bump it up a tier. 
+                        For example, a keyboard is normally an A tier project, but the <a href="https://github.com/geg-tech/biblicallyaccuratekeyboard" class="link">Biblically Accurate Keyboard</a> counts as S tier.</p>
                 </div>
-
 
                 <div class="mt-8 max-w-4xl text-xl text-center">
-                    <p class="">To get a ticket to Outpost (Hackathon + Open Sauce), purchase it in the Stardance Shop!</p>
-                    <p>You will need: (1) supercar status, and (2) 300 stardust. You can get a discount from the 300 stardust point by designing hardware projects.</p>
-                    <p class="mt-4">When you're finished designing your project, read through [THE DOCS]! Then, submit your repo in [THIS FORM] for review. If approved, we'll give you a grant through HCB.</p>
-                    <p class="text-xl">Join the <a href="https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ" class="bg-[#C84000]">#outpost</a> channel on <a>Hack Club Slack!</a></p>
+                    <p>To have it counted as part of this program you need to track your time via Stardance! Follow the guides on the Stardance page. Read them before you submit!</p>
+                </div>
+
+                <div class="mt-6 mx-10">
+                    <p class="mb-1 text-center germania">Ready to apply for a grant?</p>
+                    <a href="https://forms.hackclub.com/outpost-design">
+                        <p class="text-3xl text-center text-balance px-6 py-2 bg-[#FEAB01] text-[#3B312F] rounded hover:scale-105 transition duration-150 striped germania">
+                            SUBMIT HARDWARE DESIGN
+                        </p>
+                    </a>
+                </div>
+
+
+
+                <img src="/starlings.png" class=" my-8 h-12"/>
+
+
+                <div class="max-w-4xl text-xl text-center mb-4">
+                    <p class="germania text-3xl mb-4">Purchase the ticket in the <a href="https://stardance.hackclub.com/shop" class="link">Stardance Shop</a>!</p>
+                </div>
+
+                <div class="max-w-4xl text-xl">
+                    <div class="flex flex-col md:flex-row space-x-4 justify-center items-center text-center">
+                        <div>
+                            <p class="mb-4">The Outpost Ticket is purchasable in the <a href="https://stardance.hackclub.com/shop" class="link">Stardance Shop</a> for Stardust! You can get discounts from Stardust by designing hardware projects.</p>
+                            <p>It is locked behind the Super Hardware Builder status, which you can get by shipping a cool built hardware project.</p>
+                        </div>
+                        {/* <img src="/stardance1.png" class="rounded max-w-sm md:max-w-3xs mx-auto mt-4 md:my-0"/>*/}
+
+                    </div>
+                    
+                </div>
+
+
+                {/* 
+
+                <div class="grid grid-cols-3 gap-2 germania">
+                    <a href="https://stardance.hackclub.com">
+                        <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#513029] text-[#34E0BA] rounded hover:scale-105 transition duration-150 striped">
+                            instructions
+                        </p>
+                    </a>
+                    <a href="https://stardance.hackclub.com">
+                        <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#59332a] text-[#34E0BA] rounded hover:scale-105 transition duration-150 striped">
+                            submission form
+                        </p>
+                    </a>
+                    <a href="https://stardance.hackclub.com">
+                        <p class="text-3xl mt-8 text-center mx-10 text-balance px-6 py-2 bg-[#59332a] text-[#34E0BA] rounded hover:scale-105 transition duration-150 striped">
+                            slack
+                        </p>
+                    </a>
 
                 </div>
+            */}
+
+
             </div>
 
         </div>
@@ -361,6 +415,11 @@ import StartButton from "../components/StartButton.astro";
 
             <StartButton class="scroll-fade"/>
 
+            <a href="https://hackclub.enterprise.slack.com/archives/C0B04RP43TQ">
+                <p class="text-3xl mt-2 text-center mx-10 text-balance px-6 py-2 bg-[#3B312F] text-[#FE5100] rounded hover:scale-105 transition duration-150 striped">
+                    JOIN #OUTPOST ON SLACK
+                </p>
+            </a>
 
         </div>
     </div>
@@ -381,11 +440,11 @@ import StartButton from "../components/StartButton.astro";
                 </div>
                 <div class="scroll-fade">
                     <p class="text-2xl germania">Can I go to Open Sauce without going to the hackathon?</p>
-                    <p class="text-lg">You can buy yourself a general admission ticket through the Stardance shop separately. Housing will still be covered for the duration of Open Sauce - you won't be able to booth there though.</p>
+                    <p class="text-lg">You can buy yourself a general admission ticket through the Stardance shop separately. You can also purchase housing for the duration of Open Sauce.</p>
                 </div>
                 <div class="scroll-fade">
                     <p class="text-2xl germania">How many grants are you giving out?</p>
-                    <p class="text-lg">As many as people submit projects! Feel free to build as many projects as you want - but remember, it still needs to meet quality criteria to be approved!</p>
+                    <p class="text-lg">As many projects as people submit! Feel free to build as many projects as you want - but remember, it still needs to meet quality criteria to be approved!</p>
                 </div>
 
             </div>
@@ -425,7 +484,7 @@ import StartButton from "../components/StartButton.astro";
 
                 <div class="flex flex-col gap-4 justify-center text-lg opacity-80 mx-5 md:mx-0">
                     <p>
-                        Hack Club is a 501(c)(3) nonprofit and network of 100k+ technical high schoolers. 
+                        <a href="https://hackclub.com" class="link">Hack Club</a> is a 501(c)(3) nonprofit and network of 100k+ technical high schoolers. 
                         We believe you learn best by building, so we're creating community and providing grants so you can make awesome projects. 
                         In the past few years, we've sent 
                         <a href="https://www.youtube.com/watch?v=ufMUJ9D1fi8" class="link">30 teen hackers hiking the Pacific Crest Trail</a>, 
