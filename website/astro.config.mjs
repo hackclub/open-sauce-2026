@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
+import node from "@astrojs/node";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -25,6 +26,9 @@ function remarkDraft() {
 
 // https://astro.build/config
 export default defineConfig({
+    // Site stays static; only routes that opt out of prerendering (the signup
+    // API) are rendered on-demand by the Node server.
+    adapter: node({ mode: "standalone" }),
     markdown: {
         remarkPlugins: [remarkDraft],
         rehypePlugins: [
@@ -35,6 +39,8 @@ export default defineConfig({
         ],
     },
     vite: {
+        // The .env lives in src/, not the project root, so point Vite there.
+        envDir: "src",
         server: {
             allowedHosts: true,
         },
