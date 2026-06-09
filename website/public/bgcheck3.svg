@@ -1,4 +1,4 @@
-<svg width="240" height="360" viewBox="0 0 240 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="240" height="320" viewBox="0 0 240 320" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_172_81931)">
 <mask id="mask0_172_81931" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-480" y="-320" width="1432" height="832">
 <rect x="-480" y="-320" width="1432" height="832" fill="#FE7802"/>
@@ -132,14 +132,6 @@
 <rect x="200.001" y="300" width="20" height="20" fill="#FE9B01"/>
 <rect x="220.001" y="300" width="20" height="20" fill="#FDBA01"/>
 <rect x="160.001" y="300" width="20" height="20" fill="#FE9B01"/>
-<rect x="160.001" y="320" width="20" height="20" fill="#FDBA01"/>
-<rect x="180.001" y="320" width="20" height="20" fill="#FE9B01"/>
-<rect x="200.001" y="320" width="20" height="20" fill="#FDBA01"/>
-<rect x="220.001" y="320" width="20" height="20" fill="#FE9B01"/>
-<rect x="180.001" y="340" width="20" height="20" fill="#FDBA01"/>
-<rect x="200.001" y="340" width="20" height="20" fill="#FE9B01"/>
-<rect x="220.001" y="340" width="20" height="20" fill="#FDBA01"/>
-<rect x="160.001" y="340" width="20" height="20" fill="#FE9B01"/>
 <rect y="160" width="20" height="20" fill="#FDBA01"/>
 <rect x="20" y="160" width="20" height="20" fill="#FE9B01"/>
 <rect x="40" y="160" width="20" height="20" fill="#FDBA01"/>
@@ -204,22 +196,6 @@
 <rect x="120" y="300" width="20" height="20" fill="#FE9B01"/>
 <rect x="140" y="300" width="20" height="20" fill="#FDBA01"/>
 <rect x="80" y="300" width="20" height="20" fill="#FE9B01"/>
-<rect y="320" width="20" height="20" fill="#FDBA01"/>
-<rect x="20" y="320" width="20" height="20" fill="#FE9B01"/>
-<rect x="40" y="320" width="20" height="20" fill="#FDBA01"/>
-<rect x="60" y="320" width="20" height="20" fill="#FE9B01"/>
-<rect x="20" y="340" width="20" height="20" fill="#FDBA01"/>
-<rect x="40" y="340" width="20" height="20" fill="#FE9B01"/>
-<rect x="60" y="340" width="20" height="20" fill="#FDBA01"/>
-<rect y="340" width="20" height="20" fill="#FE9B01"/>
-<rect x="80" y="320" width="20" height="20" fill="#FDBA01"/>
-<rect x="100" y="320" width="20" height="20" fill="#FE9B01"/>
-<rect x="120" y="320" width="20" height="20" fill="#FDBA01"/>
-<rect x="140" y="320" width="20" height="20" fill="#FE9B01"/>
-<rect x="100" y="340" width="20" height="20" fill="#FDBA01"/>
-<rect x="120" y="340" width="20" height="20" fill="#FE9B01"/>
-<rect x="140" y="340" width="20" height="20" fill="#FDBA01"/>
-<rect x="80" y="340" width="20" height="20" fill="#FE9B01"/>
 <rect x="-480" y="-320" width="1432" height="832" fill="url(#paint0_linear_172_81931)"/>
 </g>
 </g>
@@ -229,7 +205,7 @@
 <stop offset="1" stop-color="#FFA300" stop-opacity="0.3"/>
 </linearGradient>
 <clipPath id="clip0_172_81931">
-<rect width="240" height="360" fill="white"/>
+<rect width="240" height="320" fill="white"/>
 </clipPath>
 </defs>
 </svg>
