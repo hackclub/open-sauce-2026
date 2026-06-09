@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from "astro/config";
 import rehypeExternalLinks from "rehype-external-links";
+import node from "@astrojs/node";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -25,6 +26,9 @@ function remarkDraft() {
 
 // https://astro.build/config
 export default defineConfig({
+    // Static site served by a standalone Node server in the container; pages
+    // are prerendered, the adapter just provides the runtime to serve them.
+    adapter: node({ mode: "standalone" }),
     markdown: {
         remarkPlugins: [remarkDraft],
         rehypePlugins: [
